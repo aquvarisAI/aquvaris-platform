@@ -1,0 +1,63 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Default deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Common helpers
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    // Units Collection
+    match /units/{unitId} {
+      function isValidUnit(data) {
+        return data.name is string && data.name.size() <= 200 &&
+               data.address is string && data.address.size() <= 500 &&
+               data.lat is number &&
+               data.lng is number &&
+               data.currentScore is int && data.currentScore >= 0 && data.currentScore <= 100 &&
+               data.risk in ['LOW', 'MEDIUM', 'HIGH', 'CRITICAL'] &&
+               data.ownerId == request.auth.uid;
+      }
+
+      allow create: if isSignedIn() && isValidUnit(request.resource.data);
+      allow get: if isSignedIn() && resource.data.ownerId == request.auth.uid;
+      allow list: if isSignedIn() && resource.data.ownerId == request.auth.uid;
+      allow update: if isSignedIn() && 
+                    resource.data.ownerId == request.auth.uid &&
+                    isValidUnit(request.resource.data) &&
+                    request.resource.data.ownerId == resource.data.ownerId;
+      allow delete: if isSignedIn() && resource.data.ownerId == request.auth.uid;
+    }
+
+    // Surveys Collection
+    match /surveys/{surveyId} {
+      function isValidSurvey(data) {
+        return isValidId(data.unitId) &&
+               data.inspectorId == request.auth.uid &&
+               data.timestamp is string;
+      }
+
+      allow create: if isSignedIn() && isValidSurvey(request.resource.data);
+      allow read: if isSignedIn() && (
+        resource.data.inspectorId == request.auth.uid ||
+        get(/databases/$(database)/documents/units/$(resource.data.unitId)).data.ownerId == request.auth.uid
+      );
+      allow update: if false; // Vistorias são imutáveis por segurança operacional
+      allow delete: if isSignedIn() && (
+        get(/databases/$(database)/documents/units/$(resource.data.unitId)).data.ownerId == request.auth.uid
+      );
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "entities": {
+    "Unit": {
+      "title": "Unit",
+      "description": "Uma unidade operacional monitorada pela Aquvaris AI.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "Nome da unidade" },
+        "address": { "type": "string", "description": "Endereço físico" },
+        "lat": { "type": "number", "description": "Latitude" },
+        "lng": { "type": "number", "description": "Longitude" },
+        "currentScore": { "type": "integer", "description": "Score ambiental de 0 a 100" },
+        "risk": { "type": "string", "enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL"], "description": "Nível de risco ambiental" },
+        "ownerId": { "type": "string", "description": "UID do usuário proprietário" }
+      },
+      "required": ["name", "address", "lat", "lng", "currentScore", "risk", "ownerId"]
+    },
+    "Survey": {
+      "title": "Survey",
+      "description": "Dados de vistoria técnica e evidência operacional multi-camada.",
+      "type": "object",
+      "properties": {
+        "unitId": { "type": "string", "description": "Referência à Unidade" },
+        "inspectorId": { "type": "string", "description": "UID do inspetor" },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "hydric": {
+          "type": "object",
+          "properties": {
+            "meterReading": { "type": "number" },
+            "observedLeaks": { "type": "boolean" },
+            "waterPressure": { "type": "string", "enum": ["LOW", "NORMAL", "HIGH"] }
+          }
+        },
+        "waste": {
+          "type": "object",
+          "properties": {
+            "volumeKG": { "type": "number" },
+            "segregationScore": { "type": "integer" },
+            "hazardousWaste": { "type": "boolean" }
+          }
+        },
+        "energy": {
+          "type": "object",
+          "properties": {
+            "kwhReading": { "type": "number" },
+            "peakDemand": { "type": "number" },
+            "mainGridStable": { "type": "boolean" }
+          }
+        },
+        "risk": {
+          "type": "object",
+          "properties": {
+            "environmentalLiability": { "type": "boolean" },
+            "riskCategory": { "type": "string", "enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL"] },
+            "riskDetails": { "type": "string" }
+          }
+        },
+        "territorial": {
+          "type": "object",
+          "properties": {
+            "occupiedArea": { "type": "number" },
+            "landscapeIntegrity": { "type": "integer" }
+          }
+        },
+        "evidenceImages": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Base64 or URLs of visual evidence"
+        },
+        "calculatedScore": { "type": "integer" },
+        "aiDiagnostic": { "type": "string" }
+      },
+      "required": ["unitId", "inspectorId", "timestamp"]
+    }
+  },
+  "firestore": {
+    "units": {
+      "schema": "Unit",
+      "description": "Coleção global de unidades operacionais."
+    },
+    "surveys": {
+      "schema": "Survey",
+      "description": "Banco de dados de vistorias técnicas."
+    }
+  }
+}

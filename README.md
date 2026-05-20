@@ -1,58 +1,58 @@
-# Aquvaris AI
+# Aquvaris AI — Intelligence System for Environmental Management
+> **Environmental Diagnostics & Hydric Intelligence powered by Gemini AI.**
 
-AI-powered environmental intelligence platform focused on real-world operational analysis, sustainability systems and intelligent decision-making.
+[![License: MIT](https://img.shields.io/badge/License-MIT-emerald.svg)](https://opensource.org/licenses/MIT)
+[![Stack: React + Vite](https://img.shields.io/badge/Stack-React%20+%20Vite-blue.svg)](https://vitejs.dev/)
+[![AI: Google Gemini](https://img.shields.io/badge/AI-Google%20Gemini-orange.svg)](https://ai.google.dev/)
+[![Cloud: Firebase](https://img.shields.io/badge/Cloud-Firebase-yellow.svg)](https://firebase.google.com/)
 
----
-
-## Vision
-
-Aquvaris AI is being developed to transform environmental operations into measurable, intelligent and actionable systems using artificial intelligence, data science and operational analysis.
-
----
-
-## Core Areas
-
-- Environmental Intelligence
-- Operational Analytics
-- AI Decision Systems
-- Environmental Monitoring
-- Sustainability Analytics
-- Data Science
-- Smart Inspection Systems
+[🇧🇷 Português](#-sobre-o-projeto) | [🇺🇸 English](#-about-the-project)
 
 ---
 
-## Platform Goals
+## 🇺🇸 About the Project
 
-- Environmental inspection automation
-- Intelligent scoring systems
-- Operational anomaly detection
-- Environmental dashboards
-- Predictive environmental analytics
-- AI-generated operational insights
+**Aquvaris AI** is a professional-grade full-stack application designed to revolutionize environmental auditing and industrial water management. By combining **Satellite/Geographic Intelligence** (Google Maps) with **Generative AI** (Gemini), it provides real-time diagnostics, anomaly detection in water consumption, and automated technical survey reports.
 
----
+### 🚀 Key Features
+*   **AI-Powered Diagnostics**: Uses Gemini Pro to analyze consumption patterns and environmental risks, providing actionable technical insights.
+*   **Smart Survey Protocol**: A step-by-step industrial audit system that generates environmental efficiency scores.
+*   **Geospatial Visualization**: Real-time thematic mapping of managed units and territories.
+*   **Automated Alerts**: Real-time detection of leaks and operational anomalies via advanced data analysis.
+*   **Mobile-First Experience**: Optimized for field engineers with PWA (Progressive Web App) capabilities.
 
-## Tech Stack
-
-- Python
-- SQL
-- PostgreSQL / PostGIS
-- React
-- Next.js
-- Supabase
-- OpenAI API
-- Power BI
+### 🛠 Tech Stack
+*   **Frontend**: React 18, TypeScript, Tailwind CSS, Framer Motion.
+*   **Backend & Cloud**: Firebase (Auth, Firestore), Google Cloud Run.
+*   **Intelligence**: Gemini 1.5 Flash API.
+*   **Maps**: Google Maps Platform (React wrapper).
+*   **Charts**: Recharts (Data-dense visualizations).
 
 ---
 
-## Current Status
+## 🇧🇷 Sobre o Projeto
 
-Early-stage MVP under development.
+O **Aquvaris AI** é uma aplicação full-stack de nível profissional desenvolvida para revolucionar a auditoria ambiental e o gerenciamento hídrico industrial. Combinando **Inteligência Geográfica** (Google Maps) com **IA Generativa** (Gemini), o sistema entrega diagnósticos em tempo real, detecção de anomalias no consumo e relatórios automáticos de vistorias técnicas.
+
+### 🚀 Funcionalidades Chave
+*   **Diagnóstico via IA**: Utiliza o Gemini Pro para analisar padrões de consumo e riscos ambientais, entregando insights técnicos acionáveis.
+*   **Protocolo de Vistoria Inteligente**: Sistema de auditoria industrial passo-a-passo que gera scores de eficiência ambiental.
+*   **Visualização Geoespacial**: Mapeamento temático em tempo real das unidades gerenciadas e territórios.
+*   **Alertas Automáticos**: Detecção de vazamentos e anomalias operacionais via análise avançada de dados.
+*   **Experiência Mobile-First**: Otimizado para engenheiros em campo com capacidades PWA.
 
 ---
 
-## Founder
+## 📈 Roadmap & Evolution
+- [ ] **Offline-First Synchronization**: Enable field data collection without internet access.
+- [ ] **Predictive Analytics**: Forecasting water consumption using specialized ML models.
+- [ ] **Satellite Image Integration**: Real-time deforestation and land-use monitoring.
 
-Bruna Preschadt  
-Environmental Engineering • Data Science • AI Systems
+---
+
+## 👨‍💻 Author
+
+**Bruna Preschad** - [GitHub](https://github.com/aquvarisAI) - [LinkedIn](https://www.linkedin.com/in/bpreschad/)
+
+---
+*Developed as a showcase for Senior AI & Full-stack positions in the Environmental Tech sector.*

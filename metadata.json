@@ -1,0 +1,8 @@
+{
+  "name": "Aquvaris AI",
+  "description": "Operational environmental intelligence platform for water management, risk analysis, and corporate ESG sustainability.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": []
+}
