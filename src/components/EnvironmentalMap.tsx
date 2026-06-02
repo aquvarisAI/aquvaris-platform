@@ -1,44 +1,146 @@
-import { MapPin } from "lucide-react";
+import { useState } from "react";
+import {
+  GoogleMap,
+  MarkerF,
+  InfoWindowF,
+  useJsApiLoader,
+} from "@react-google-maps/api";
+
 import { GlassCard } from "./ui/GlassCard";
 
-const points = [
-  { x: "18%", y: "32%", color: "text-emerald-400" },
-  { x: "35%", y: "52%", color: "text-yellow-400" },
-  { x: "48%", y: "38%", color: "text-red-400" },
-  { x: "62%", y: "58%", color: "text-cyan-400" },
-  { x: "78%", y: "30%", color: "text-emerald-400" },
-  { x: "84%", y: "65%", color: "text-orange-400" },
+type RiskLevel = "normal" | "attention" | "critical";
+
+interface Unit {
+  id: number;
+  name: string;
+  address: string;
+  lat: number;
+  lng: number;
+  risk: RiskLevel;
+}
+
+const units: Unit[] = [
+  {
+    id: 1,
+    name: "Empresa Verde",
+    address: "Centro - Santa Cruz do Sul",
+    lat: -29.7175,
+    lng: -52.4258,
+    risk: "normal",
+  },
+  {
+    id: 2,
+    name: "Indústria Norte",
+    address: "Distrito Industrial",
+    lat: -29.705,
+    lng: -52.448,
+    risk: "attention",
+  },
+  {
+    id: 3,
+    name: "Metalúrgica Horizonte",
+    address: "Zona Leste",
+    lat: -29.729,
+    lng: -52.401,
+    risk: "critical",
+  },
 ];
 
+const center = {
+  lat: -29.7175,
+  lng: -52.4258,
+};
+
+function markerColor(risk: RiskLevel) {
+  switch (risk) {
+    case "normal":
+      return "http://maps.google.com/mapfiles/ms/icons/green-dot.png";
+
+    case "attention":
+      return "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png";
+
+    case "critical":
+      return "http://maps.google.com/mapfiles/ms/icons/red-dot.png";
+
+    default:
+      return "http://maps.google.com/mapfiles/ms/icons/blue-dot.png";
+  }
+}
+
 export function EnvironmentalMap() {
+  const [selected, setSelected] = useState<Unit | null>(null);
+
+  const { isLoaded } = useJsApiLoader({
+    googleMapsApiKey:
+      import.meta.env.VITE_GOOGLE_MAPS_API_KEY || "",
+  });
+
   return (
-    <GlassCard className="relative h-[360px] overflow-hidden">
+    <GlassCard className="overflow-hidden">
       <div className="mb-4">
-        <h2 className="text-lg font-bold text-white">Mapa de Risco Ambiental</h2>
-        <p className="text-sm text-slate-400">Empresas monitoradas por nível de risco</p>
+        <h2 className="text-lg font-bold text-white">
+          Mapa Inteligente Ambiental
+        </h2>
+
+        <p className="text-sm text-slate-400">
+          Empresas monitoradas por nível de risco
+        </p>
       </div>
 
-      <div className="relative h-[270px] rounded-xl bg-[#020A0E] overflow-hidden border border-white/5">
-        {/* Grid dots/lines */}
-        <div className="absolute inset-0 opacity-30 bg-[linear-gradient(to_right,#10b98122_1px,transparent_1px),linear-gradient(to_bottom,#10b98122_1px,transparent_1px)] bg-[size:40px_40px]" />
-
-        {/* Glow center */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(16,185,129,0.18),transparent_60%)]" />
-
-        {points.map((point, index) => (
-          <MapPin
-            key={index}
-            className={`absolute ${point.color} drop-shadow-[0_0_10px_rgba(16,185,129,0.8)] animate-pulse transition-all hover:scale-125 cursor-pointer`}
-            style={{ left: point.x, top: point.y }}
-            size={30}
-          />
-        ))}
-
-        <div className="absolute bottom-4 right-4 rounded-xl bg-black/50 backdrop-blur-md p-3 text-[10px] font-mono text-slate-300 border border-white/10 space-y-1 uppercase tracking-tighter shrink-0">
-          <p><span className="text-red-400 mr-2">●</span> Risco crítico</p>
-          <p><span className="text-yellow-400 mr-2">●</span> Atenção</p>
-          <p><span className="text-emerald-400 mr-2">●</span> Normal</p>
+      {!isLoaded ? (
+        <div className="h-[500px] flex items-center justify-center text-slate-400">
+          Carregando mapa...
         </div>
+      ) : (
+        <GoogleMap
+          mapContainerStyle={{
+            width: "100%",
+            height: "500px",
+          }}
+          center={center}
+          zoom={12}
+        >
+          {units.map((unit) => (
+            <MarkerF
+              key={unit.id}
+              position={{
+                lat: unit.lat,
+                lng: unit.lng,
+              }}
+              icon={markerColor(unit.risk)}
+              onClick={() => setSelected(unit)}
+            />
+          ))}
+
+          {selected && (
+            <InfoWindowF
+              position={{
+                lat: selected.lat,
+                lng: selected.lng,
+              }}
+              onCloseClick={() => setSelected(null)}
+            >
+              <div className="min-w-[200px]">
+                <h3 className="font-bold">
+                  {selected.name}
+                </h3>
+
+                <p>{selected.address}</p>
+
+                <p className="mt-2">
+                  <strong>Risco:</strong>{" "}
+                  {selected.risk}
+                </p>
+              </div>
+            </InfoWindowF>
+          )}
+        </GoogleMap>
+      )}
+
+      <div className="mt-4 flex gap-4 text-xs text-slate-300">
+        <span className="text-green-400">● Normal</span>
+        <span className="text-yellow-400">● Atenção</span>
+        <span className="text-red-400">● Crítico</span>
       </div>
     </GlassCard>
   );

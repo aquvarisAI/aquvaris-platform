@@ -1,51 +1,13 @@
-
 import React, { useState, useEffect, useMemo } from 'react';
 import { 
-  Droplets, 
-  AlertTriangle, 
-  Map as MapIcon, 
-  BarChart3, 
   Settings, 
   Search, 
-  Navigation,
-  Activity,
-  Zap,
-  Leaf,
-  ChevronRight,
-  Info,
-  Clock,
-  Sparkles,
   LogIn,
   LogOut,
-  ClipboardCheck,
-  ArrowRight,
-  Building2,
-  ShieldCheck,
-  BrainCircuit,
-  LayoutDashboard
 } from 'lucide-react';
-import { 
-  APIProvider, 
-  Map, 
-  AdvancedMarker, 
-  Pin, 
-  InfoWindow,
-  useAdvancedMarkerRef 
-} from '@vis.gl/react-google-maps';
-import { 
-  AreaChart, 
-  Area, 
-  XAxis, 
-  YAxis, 
-  CartesianGrid, 
-  Tooltip, 
-  ResponsiveContainer,
-  LineChart,
-  Line
-} from 'recharts';
 import { motion, AnimatePresence } from 'motion/react';
-import { cn, formatCurrency, OperationType } from './lib/utils';
-import { UnitIntelligence, EnvironmentalRisk, AlertType, EnvironmentalImpact, TechnicalSurvey } from './types';
+import { cn } from './lib/utils';
+import { UnitIntelligence, EnvironmentalRisk, AlertType, TechnicalSurvey } from './types';
 import { generateEnvironmentalDiagnostic } from './services/geminiService';
 import { auth, loginWithGoogle, logout, db, testFirestoreConnection } from './lib/firebase';
 import { onAuthStateChanged, User } from 'firebase/auth';
@@ -59,12 +21,12 @@ import { AIDiagnosis } from "./components/AIDiagnosis";
 import { GlassCard } from "./components/ui/GlassCard";
 import { SurveyDashboard } from './components/SurveyDashboard';
 import { Portfolio } from './components/Portfolio';
+import { CompanyDashboard } from './components/CompanyDashboard';
 
-// Mock values for when user is not logged in or doesn't have units
 const DEFAULT_MOCK_UNITS: UnitIntelligence[] = [
   {
     id: 'unit-1',
-    name: 'Industrial Park Alpha',
+    name: 'Parque Industrial Alfa',
     address: 'Setor Industrial, 102 - Brasília',
     lat: -15.7942,
     lng: -47.8822,
@@ -87,7 +49,7 @@ const DEFAULT_MOCK_UNITS: UnitIntelligence[] = [
   },
   {
     id: 'unit-2',
-    name: 'Logistics Hub Beta',
+    name: 'Centro Logístico Beta',
     address: 'Rodovia BR-153, KM 12',
     lat: -15.8200,
     lng: -47.9200,
@@ -102,7 +64,7 @@ const DEFAULT_MOCK_UNITS: UnitIntelligence[] = [
   },
   {
     id: 'unit-3',
-    name: 'Business Center Gamma',
+    name: 'Centro de Negócios Gama',
     address: 'Av. Paulista, 1500 - SP',
     lat: -15.7500,
     lng: -47.8500,
@@ -123,8 +85,6 @@ const DEFAULT_MOCK_UNITS: UnitIntelligence[] = [
     ],
   }
 ];
-
-const GOOGLE_MAPS_API_KEY = process.env.GOOGLE_MAPS_PLATFORM_KEY || '';
 
 export default function App() {
   const [user, setUser] = useState<User | null>(null);
@@ -150,7 +110,6 @@ export default function App() {
       if (stopSurveySnapshot) { stopSurveySnapshot(); stopSurveySnapshot = null; }
 
       if (currentUser) {
-        // Fetch user units
         const q = query(collection(db, 'units'), where('ownerId', '==', currentUser.uid));
         stopSnapshot = onSnapshot(q, (snapshot) => {
           const fetchedUnits = snapshot.docs.map(doc => ({
@@ -177,7 +136,6 @@ export default function App() {
     };
   }, []);
 
-  // Monitor selected unit for surveys
   useEffect(() => {
     if (user && selectedUnit && !selectedUnit.id.startsWith('unit-')) {
       const q = query(
@@ -202,32 +160,25 @@ export default function App() {
     );
   }, [units, searchTerm]);
 
-  const handleUnitSelect = (unit: UnitIntelligence) => {
-    setSelectedUnit(unit);
-    setAiDiagnostic(null);
-  };
-
   const getDiagnostic = async () => {
     if (!selectedUnit) return;
     setIsDiagnosticLoading(true);
-    const result = await generateEnvironmentalDiagnostic(selectedUnit);
-    setAiDiagnostic(result);
+    const result = await generateEnvironmentalDiagnostic(selectedUnit, {} as any, {} as any);
+    setAiDiagnostic(result?.summary || null);
     setIsDiagnosticLoading(false);
-  };
-
-  const getRiskColor = (risk: EnvironmentalRisk) => {
-    switch (risk) {
-      case EnvironmentalRisk.LOW: return 'bg-emerald-500';
-      case EnvironmentalRisk.MEDIUM: return 'bg-amber-500';
-      case EnvironmentalRisk.HIGH: return 'bg-orange-500';
-      case EnvironmentalRisk.CRITICAL: return 'bg-red-500';
-      default: return 'bg-slate-500';
-    }
   };
 
   const startSurveyForUnit = (unit: UnitIntelligence) => {
     setSelectedUnit(unit);
     setIsSurveyOpen(true);
+  };
+
+  const TAB_LABELS: Record<string, string> = {
+    dashboard: 'Geral',
+    surveys: 'Vistorias',
+    units: 'Empresas',
+    portfolio: 'Portfólio',
+    diagnostics: 'IA',
   };
 
   return (
@@ -238,13 +189,12 @@ export default function App() {
         onTabChange={setActiveTab}
       />
 
-      {/* Main Content Area */}
       <main className="flex-1 flex flex-col overflow-hidden relative pb-20 lg:pb-0">
-        {/* Header - Transparent High-Tech (Small on Mobile) */}
+        {/* Header */}
         <header className="h-16 lg:h-20 border-b border-white/5 bg-[#0B1118]/80 backdrop-blur-md px-6 lg:px-8 flex items-center justify-between z-10 shrink-0">
           <div className="flex flex-col">
             <h2 className="text-lg lg:text-xl font-bold tracking-tight uppercase leading-none">
-              {activeTab === 'dashboard' ? 'Geral' : activeTab === 'surveys' ? 'Vistorias' : activeTab === 'units' ? 'Empresas' : activeTab === 'portfolio' ? 'Portfólio' : 'Sistema'}
+              {TAB_LABELS[activeTab] || 'Sistema'}
             </h2>
             <p className="hidden xs:block text-[9px] font-mono text-gray-500 uppercase tracking-widest mt-1 opacity-60">Intelligence Hub</p>
           </div>
@@ -290,18 +240,14 @@ export default function App() {
           </div>
         </header>
 
-        {/* Dashboard Grid */}
+        {/* Content */}
         {activeTab === 'dashboard' ? (
           <div className="flex-1 overflow-auto p-4 lg:p-8 space-y-6 lg:space-y-8 scrollbar-hide">
-            
             <header className="flex items-center justify-between">
               <div>
                 <h1 className="text-xl lg:text-2xl font-bold tracking-tight">Visão Geral</h1>
-                <p className="text-xs lg:text-sm text-slate-400">
-                  Panorama ambiental inteligente
-                </p>
+                <p className="text-xs lg:text-sm text-slate-400">Panorama ambiental inteligente</p>
               </div>
-
               <button 
                 onClick={() => setActiveTab('surveys')}
                 className="hidden sm:block rounded-xl bg-emerald-500 px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-black hover:bg-emerald-400 transition-all shadow-lg shadow-emerald-500/20 active:scale-95"
@@ -325,15 +271,14 @@ export default function App() {
 
               <GlassCard className="flex flex-col h-[400px] xl:h-auto">
                 <h2 className="text-lg font-bold mb-5 tracking-tight">Alertas Recentes</h2>
-
                 <div className="space-y-3 flex-1 overflow-y-auto scrollbar-hide">
                   {[
-                    { title: "Consumo anômalo", company: "Empresa Metalúrgica X", color: "text-red-400", sev: "CRITICAL" },
-                    { title: "Vazamento noturno", company: "Indústria Y", color: "text-yellow-400", sev: "MEDIUM" },
-                    { title: "Resíduo fora padrão", company: "Química Z", color: "text-emerald-400", sev: "LOW" },
-                    { title: "Efluente acima", company: "Têxtil W", color: "text-red-400", sev: "HIGH" },
+                    { title: "Consumo anômalo", company: "Empresa Metalúrgica X", color: "text-red-400" },
+                    { title: "Vazamento noturno", company: "Indústria Y", color: "text-yellow-400" },
+                    { title: "Resíduo fora padrão", company: "Química Z", color: "text-emerald-400" },
+                    { title: "Efluente acima", company: "Têxtil W", color: "text-red-400" },
                   ].map((alert, index) => (
-                    <div key={index} className="rounded-xl bg-white/5 p-4 border border-white/5 hover:border-white/10 transition-colors group cursor-default">
+                    <div key={index} className="rounded-xl bg-white/5 p-4 border border-white/5 hover:border-white/10 transition-colors">
                       <div className="flex items-center justify-between mb-1">
                         <p className={`text-[11px] lg:text-xs font-bold leading-none ${alert.color}`}>{alert.title}</p>
                         <span className="text-[9px] font-mono opacity-30">2m</span>
@@ -342,7 +287,6 @@ export default function App() {
                     </div>
                   ))}
                 </div>
-                
                 <button className="mt-4 w-full py-2 text-[10px] font-mono text-emerald-400 uppercase tracking-widest border border-emerald-500/10 rounded-lg hover:bg-emerald-500/5 transition-colors">
                   Ver Incidentes
                 </button>
@@ -355,7 +299,6 @@ export default function App() {
                 onExecute={getDiagnostic} 
                 loading={isDiagnosticLoading} 
               />
-
               <GlassCard>
                 <div className="flex items-center justify-between mb-5">
                   <h2 className="text-lg font-bold tracking-tight">Protocolo Ativo</h2>
@@ -366,7 +309,6 @@ export default function App() {
                     Abrir Auditoria
                   </button>
                 </div>
-
                 <div className="space-y-2 cursor-pointer" onClick={() => setActiveTab('surveys')}>
                   {[
                     ["Identificação", "Completo", "text-emerald-400"],
@@ -388,19 +330,32 @@ export default function App() {
               </GlassCard>
             </section>
           </div>
+
         ) : activeTab === 'surveys' ? (
           <SurveyDashboard 
             units={units} 
             onStartSurvey={startSurveyForUnit} 
           />
+
+        ) : activeTab === 'units' ? (
+          <CompanyDashboard
+            units={units}
+            onAddUnit={() => setIsAddUnitOpen(true)}
+            onSelectUnit={(unit) => {
+              setSelectedUnit(unit);
+              setActiveTab('surveys');
+            }}
+          />
+
         ) : activeTab === 'portfolio' ? (
           <Portfolio />
+
         ) : (
           <div className="flex-1 flex items-center justify-center opacity-30">
-             <div className="text-center group">
-                <Settings className="mx-auto mb-4 group-hover:rotate-45 transition-transform" size={48} />
-                <p className="text-sm font-mono uppercase tracking-[0.4em]">Selecione uma opção no menu</p>
-             </div>
+            <div className="text-center group">
+              <Settings className="mx-auto mb-4 group-hover:rotate-45 transition-transform" size={48} />
+              <p className="text-sm font-mono uppercase tracking-[0.4em]">Selecione uma opção no menu</p>
+            </div>
           </div>
         )}
       </main>
@@ -411,12 +366,9 @@ export default function App() {
           onClose={() => setIsSurveyOpen(false)} 
           onSuccess={async (newSurveyScore) => {
             setIsSurveyOpen(false);
-            // Update the unit's currentScore in Firestore when a survey is saved
             if (selectedUnit.id && !selectedUnit.id.startsWith('unit-')) {
-               const unitRef = doc(db, 'units', selectedUnit.id);
-               await updateDoc(unitRef, {
-                 currentScore: newSurveyScore
-               });
+              const unitRef = doc(db, 'units', selectedUnit.id);
+              await updateDoc(unitRef, { currentScore: newSurveyScore });
             }
           }}
         />

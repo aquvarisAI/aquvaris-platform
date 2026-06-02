@@ -19,7 +19,8 @@ import { motion, AnimatePresence } from 'motion/react';
 import { TechnicalSurvey, UnitIntelligence, EnvironmentalRisk } from '../types';
 import { db, auth } from '../lib/firebase';
 import { collection, addDoc } from 'firebase/firestore';
-import { calculatePredictiveScore, analyzeSurveyWithVision } from '../services/geminiService';
+import { analyzeEvidenceImages, calculatePredictiveScore } from '../services/geminiService';
+
 import { cn } from '../lib/utils';
 
 interface SurveyFormProps {
@@ -442,8 +443,8 @@ export function SurveyForm({ unit, onClose, onSuccess }: SurveyFormProps) {
                               <button 
                                 onClick={async () => {
                                   setIsAnalyzing(true);
-                                  const tempSurvey: any = { risk: { riskCategory: formData.riskCategory }, hydric: { observedLeaks: formData.observedLeaks }, observations: formData.observations, unitId: unit.id };
-                                  const analysis = await analyzeSurveyWithVision(tempSurvey, images);
+                                  const context = `Vistoria de ${unit.name} - Risco: ${formData.riskCategory}. Vazamento: ${formData.observedLeaks ? 'Sim' : 'Não'}. ${formData.observations}`;
+                                  const analysis = await analyzeEvidenceImages(images, context);
                                   setVisionAnalysis(analysis);
                                   setIsAnalyzing(false);
                                 }}
@@ -492,14 +493,18 @@ export function SurveyForm({ unit, onClose, onSuccess }: SurveyFormProps) {
                    <button 
                      onClick={() => {
                        if (step === 7) {
-                         const currentSurvey: any = {
+                         const currentSurvey: TechnicalSurvey = {
+                           unitId: unit.id,
+                           inspectorId: auth.currentUser?.uid || '',
+                           timestamp: new Date().toISOString(),
                            territorial: { occupiedArea: parseFloat(formData.occupiedArea), landscapeIntegrity: parseInt(formData.landscapeIntegrity) },
                            hydric: { meterReading: 0, observedLeaks: formData.observedLeaks, waterPressure: formData.waterPressure },
-                           waste: { segregationScore: parseInt(formData.segregationScore), hazardousWaste: formData.hazardousWaste },
-                           energy: { mainGridStable: formData.mainGridStable },
-                           risk: { riskCategory: formData.riskCategory, environmentalLiability: formData.liability }
+                           waste: { volumeKG: parseFloat(formData.wasteKG), segregationScore: parseInt(formData.segregationScore), hazardousWaste: formData.hazardousWaste },
+                           energy: { kwhReading: parseFloat(formData.kwhReading || '0'), peakDemand: parseFloat(formData.peakDemand), mainGridStable: formData.mainGridStable },
+                           risk: { riskCategory: formData.riskCategory, environmentalLiability: formData.liability, riskDetails: formData.riskDetails }
                          };
-                         setPredictedScore(calculatePredictiveScore(currentSurvey as TechnicalSurvey));
+                         const scoreBreakdown = calculatePredictiveScore(currentSurvey);
+                         setPredictedScore(scoreBreakdown.total);
                        }
                        setStep(s => s + 1);
                      }}
@@ -549,7 +554,7 @@ function BrainCircuit({ className, size }: { className?: string, size?: number }
       <path d="M2 12h2.5" />
       <path d="M6 7.5 4.6 6" />
       <path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" />
-      <circle cx="12" cy="12" r="2" />
+      <circle npm install react react-dom lucide-react motion firebasecx="12" cy="12" r="2" />
     </svg>
    )
 }
