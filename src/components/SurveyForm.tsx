@@ -554,7 +554,7 @@ function BrainCircuit({ className, size }: { className?: string, size?: number }
       <path d="M2 12h2.5" />
       <path d="M6 7.5 4.6 6" />
       <path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" />
-      <circle npm install react react-dom lucide-react motion firebasecx="12" cy="12" r="2" />
+    <circle cx="12" cy="12" r="2" />
     </svg>
    )
 }
