@@ -11,7 +11,7 @@
 [![Status](https://img.shields.io/badge/Status-MVP%20em%20desenvolvimento-4CAF50?style=flat)](#)
 [![Domínio](https://img.shields.io/badge/Categoria-Environmental%20Intelligence-1D9E75?style=flat)](#)
 [![Stack](https://img.shields.io/badge/Stack-Next.js%20%7C%20Supabase%20%7C%20OpenAI-black?style=flat)](#)
-
+[![Site](https://img.shields.io/badge/Site-aquvaris--platform.vercel.app-1D9E75?style=flat&logo=vercel)](https://aquvaris-platform.vercel.app) 
 </div>
 
 ---
