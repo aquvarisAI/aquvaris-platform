@@ -2,154 +2,195 @@
 
 <img src="https://avatars.githubusercontent.com/u/282925572?s=200&v=4" alt="Aquvaris AI" width="100" style="border-radius: 12px"/>
 
-# Aquvaris AI — Platform
+# Aquvaris AI
 
-**Plataforma de inteligência ambiental e operacional**
+**Plataforma de Inteligência Ambiental Territorial**
 
-Transformamos dados ambientais complexos em decisões práticas — com IA, geolocalização e automação.
+*Tornando visível a relação entre desenvolvimento econômico e transformação ambiental*
 
 [![Status](https://img.shields.io/badge/Status-MVP%20em%20desenvolvimento-4CAF50?style=flat)](#)
-[![TypeScript](https://img.shields.io/badge/TypeScript-Next.js-3178C6?style=flat&logo=typescript&logoColor=white)](#)
-[![Supabase](https://img.shields.io/badge/Backend-Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white)](#)
-[![OpenAI](https://img.shields.io/badge/IA-OpenAI%20API-412991?style=flat&logo=openai&logoColor=white)](#)
-[![Licença](https://img.shields.io/badge/Licen%C3%A7a-MIT-green?style=flat)](#)
-
-[Organização](https://github.com/aquvarisAI) · [ai-models](https://github.com/aquvarisAI/aquvaris-ai-models) · [inspection-engine](https://github.com/aquvarisAI/aquvaris-inspection-engine) · [design-system](https://github.com/aquvarisAI/aquvaris-design-system)
+[![Domínio](https://img.shields.io/badge/Categoria-Environmental%20Intelligence-1D9E75?style=flat)](#)
+[![Stack](https://img.shields.io/badge/Stack-Next.js%20%7C%20Supabase%20%7C%20OpenAI-black?style=flat)](#)
 
 </div>
 
 ---
 
-## O problema
+## O problema que ninguém está resolvendo bem
 
-Empresas, indústrias e órgãos públicos acumulam dados ambientais em sistemas isolados — planilhas, formulários físicos, laudos em PDF. O resultado é análise lenta, decisão reativa e risco de não conformidade regulatória.
+As métricas ESG atuais medem **intenção e investimento** — não resultado.
 
-**A Aquvaris responde perguntas que nenhum dashboard convencional responde:**
+Uma empresa pode declarar que investiu R$ 10 milhões em sustentabilidade. Mas o que mudou no território? A qualidade da água melhorou? O ar ficou mais limpo? Os ecossistemas se recuperaram?
 
-| Pergunta | Como a Aquvaris responde |
-|----------|--------------------------|
-| Onde estão os riscos ambientais? | Mapa inteligente com camadas de análise territorial |
-| O que precisa de atenção primeiro? | Priorização automática por IA |
-| Quais indicadores estão piorando? | Dashboard com alertas em tempo real |
-| O que a IA recomenda fazer? | Insights e recomendações gerados automaticamente |
-| Como gerar relatórios automaticamente? | Relatórios executivos via OpenAI API |
+Hoje não existe uma forma sistemática, baseada em dados e geograficamente precisa de responder essas perguntas.
+
+**A Aquvaris resolve isso.**
 
 ---
 
-## Visão geral da plataforma
+## O que é a Aquvaris
 
-A Aquvaris é um **copiloto de análise e decisão operacional** — não apenas armazena dados, mas analisa, prioriza e recomenda ações em tempo real para equipes ambientais, técnicas e de gestão.
+A Aquvaris é uma **plataforma de inteligência territorial ambiental** que monitora, analisa e atribui a evolução da qualidade ambiental ao longo do tempo — conectando atividade humana e saúde dos ecossistemas em um único sistema de evidências.
+
+Em vez de perguntar *"quanto foi investido?"*, a Aquvaris pergunta:
+
+> **O que mudou no território?**
+
+---
+
+## Da responsabilidade declarada para a responsabilidade evidenciada
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                      AQUVARIS PLATFORM                      │
-│                   React + Next.js + TypeScript              │
-│                        Deploy: Vercel                       │
-└────────────┬────────────────────────────┬───────────────────┘
-             │                            │
-┌────────────▼───────────┐   ┌────────────▼───────────────────┐
-│   BACKEND & DADOS      │   │        IA & ANÁLISE            │
-│  Supabase + PostgreSQL │   │  aquvaris-ai-models            │
-│  PostGIS (geoespacial) │   │  OpenAI API                    │
-│  Supabase Auth         │   │  Anomaly detection             │
-│  Supabase Storage      │   │  Predictive analytics          │
-└────────────┬───────────┘   └────────────────────────────────┘
-             │
-┌────────────▼───────────────────────────────────────────────┐
-│              MÓDULOS INTEGRADOS                            │
-│  🌎 Mapa (Google Maps API)                                 │
-│  📋 Inspeções (aquvaris-inspection-engine)                 │
-│  🎨 Interface (aquvaris-design-system)                     │
-└────────────────────────────────────────────────────────────┘
+HOJE (ESG tradicional)        AQUVARIS
+─────────────────────         ─────────────────────────────
+Empresa                       Empresa
+↓                             ↓
+Relatório ESG                 Território monitorado
+↓                             ↓
+Indicadores internos          Água · Ar · Biodiversidade
+↓                             ↓
+Auditoria declarada           Evidência observada e atribuída
 ```
 
 ---
 
-## Funcionalidades
+## Como funciona
 
-### 🌎 Mapa Inteligente
-Visualização geográfica de ativos, inspeções e ocorrências com integração Google Maps API e camadas de análise territorial por região, risco e prioridade.
+### 🗺️ Camada territorial
 
-### 📊 Dashboard Analítico
-Indicadores ambientais em tempo real, alertas automáticos e priorização inteligente de problemas — de forma visual e acionável.
+Cada ponto no mapa mostra em tempo real:
 
-### 🤖 IA para Insights
-Geração automática de análises, resumos executivos e recomendações de ação via OpenAI API. Identificação de anomalias sem intervenção manual.
+- 📍 Empresas e indústrias atuantes na região
+- 💧 Índice de qualidade da água (pH, turbidez, DBO, metais)
+- 🌬️ Índice de qualidade do ar (PM2.5, PM10, NO2, O3)
+- 🌿 Cobertura vegetal e biodiversidade
+- 📈 Evolução histórica e tendência futura
+- 🏭 Impacto associado por ator
 
-### 📋 Inspeções Digitais
-Formulários inteligentes para coleta estruturada de dados em campo, avaliação de conformidade e geração automática de relatórios.
+### 🤖 Camada de inteligência
 
-### 📈 Inteligência Preditiva *(próxima fase)*
-Previsão de riscos ambientais, tendências e modelos preditivos para água, resíduos, emissões e energia.
+A IA da Aquvaris:
+
+- Detecta anomalias ambientais automaticamente
+- Gera correlações entre atividade econômica e indicadores ambientais
+- Produz relatórios executivos e diagnósticos automáticos
+- Projeta tendências e riscos futuros
+- Atribui melhorias ambientais aos atores responsáveis
+
+### 📋 Camada de inspeção
+
+- Formulários digitais de campo para coleta estruturada
+- Avaliação de conformidade regulatória
+- Geração automática de laudos e relatórios
+- Rastreabilidade histórica por ativo e localização
 
 ---
 
-## Repositórios da organização
+## Responsabilidade Positiva — um conceito novo
 
-| Repositório | Descrição | Status |
-|-------------|-----------|--------|
-| **aquvaris-platform** | Frontend principal — interface e dashboards | 🔄 Em desenvolvimento |
-| [aquvaris-ai-models](https://github.com/aquvarisAI/aquvaris-ai-models) | Modelos de IA, detecção de anomalias e análise preditiva | 🔄 Em desenvolvimento |
-| [aquvaris-inspection-engine](https://github.com/aquvarisAI/aquvaris-inspection-engine) | Motor de inspeções digitais e scoring operacional | 🔄 Em desenvolvimento |
-| [aquvaris-design-system](https://github.com/aquvarisAI/aquvaris-design-system) | Design system e arquitetura de interface | 🔄 Em desenvolvimento |
+A Aquvaris inverte a lógica tradicional de sistemas ambientais.
 
----
+Em vez de apenas apontar problemas, a plataforma **reconhece e acelera impactos positivos**.
 
-## Stack técnica
+```
+Município X — Região do Rio Paraíba
 
-| Camada | Tecnologia |
-|--------|-----------|
-| Frontend | React + Next.js + TypeScript |
-| Banco de dados | PostgreSQL + PostGIS |
-| Backend & Auth | Supabase |
-| Armazenamento | Supabase Storage |
-| IA | OpenAI API |
-| Mapas | Google Maps API |
-| Deploy | Vercel |
+2018: Índice de qualidade da água = 62
+2026: Índice de qualidade da água = 84
+
+Aquvaris identifica:
+├── Empresas presentes na região
+├── Projetos implantados no período
+├── Mudanças no uso do solo
+├── Investimentos em saneamento
+└── Correlação: +22 pontos atribuídos a [atores identificados]
+```
+
+Isso cria uma nova categoria: **Crédito de Impacto Ambiental Real** — diferente dos créditos de carbono tradicionais porque é baseado em evidência territorial observada, não em declaração.
 
 ---
 
 ## Para quem
 
-- 🏭 **Indústrias** — saneamento, energia, agronegócio
-- 🌿 **Consultorias ambientais** — engenheiros, técnicos e analistas
-- 🏛️ **Setor público** — prefeituras, secretarias de meio ambiente
-- 📊 **Gestores ESG** — auditores e analistas de sustentabilidade
+| Segmento | Necessidade | Como a Aquvaris ajuda |
+|----------|-------------|----------------------|
+| 🏭 Indústrias | Compliance regulatório, ESG auditável | Monitoramento contínuo + laudos automáticos |
+| 🌿 Consultorias ambientais | Dados precisos, relatórios ágeis | Pipeline de dados + relatórios por IA |
+| 🏛️ Setor público | Gestão territorial, políticas baseadas em evidência | Mapa de risco + alertas automáticos |
+| 💰 Investidores ESG | Due diligence ambiental real | Scoring territorial baseado em dados |
+| 🌱 Empresas ESG | Demonstrar impacto positivo real | Atribuição de melhorias ambientais |
 
 ---
 
-## Status do MVP
+## Visão de mercado
+
+A Aquvaris está construindo infraestrutura para uma categoria emergente:
+
+**Environmental Intelligence (EI)** — a convergência de:
+
+- IoT e sensoriamento remoto
+- Inteligência artificial aplicada ao território
+- ESG baseado em evidências (não em declarações)
+- Digital twins ambientais
+- Dados públicos e privados integrados
+
+Esta categoria está sendo definida agora. Plataformas globais similares operam em nichos isolados. A Aquvaris propõe uma camada unificada de inteligência territorial para o mercado brasileiro e latino-americano — onde a urgência ambiental é maior e os dados são mais escassos.
+
+---
+
+## Missão
+
+> Tornar visível a relação entre desenvolvimento econômico e transformação ambiental — conectando empresas, governos e territórios através de evidências mensuráveis de impacto real.
+
+---
+
+## Arquitetura técnica
+
+```
+Fontes de dados
+├── APIs públicas (OpenAQ, ANA, INMET, IBGE)
+├── Sensores IoT e estações de monitoramento
+├── Inspeções digitais em campo
+└── Dados de empresas e licenças ambientais
+          ↓
+Pipeline de dados (Bronze → Silver → Gold)
+          ↓
+Modelos de IA
+├── Detecção de anomalias
+├── Atribuição de impacto
+├── Análise preditiva
+└── Geração de insights (OpenAI API)
+          ↓
+Plataforma (Next.js + Supabase + PostGIS)
+├── Mapa inteligente territorial
+├── Dashboard analítico
+├── Inspeções digitais
+└── Relatórios automáticos
+```
+
+| Camada | Tecnologia |
+|--------|-----------|
+| Frontend | React + Next.js + TypeScript |
+| Banco de dados | PostgreSQL + PostGIS |
+| Backend | Supabase |
+| IA | OpenAI API + modelos próprios |
+| Mapas | Google Maps API |
+| Deploy | Vercel |
+
+---
+
+## Status atual
 
 | Módulo | Status |
 |--------|--------|
-| Interface React/Next.js | ✅ Em construção |
-| Dashboard analítico | ✅ Em construção |
-| Integração Google Maps | ✅ Implementado |
-| Autenticação Supabase | ✅ Configurado |
-| Banco PostgreSQL + PostGIS | ✅ Estruturado |
-| Relatórios por IA | 🔄 Em desenvolvimento |
+| Plataforma frontend | 🔄 MVP em construção |
+| Dashboard analítico | 🔄 Em construção |
+| Mapa inteligente | ✅ Integração Google Maps |
+| Pipeline de dados ambientais | ✅ Operacional (OpenAQ) |
+| Detecção de anomalias | ✅ Isolation Forest + Z-score |
 | Inspeções digitais | 🔄 Em desenvolvimento |
-| Inteligência preditiva | 📅 Próxima fase |
-
----
-
-## Como rodar localmente
-
-```bash
-# 1. Clone o repositório
-git clone https://github.com/aquvarisAI/aquvaris-platform.git
-
-# 2. Instale as dependências
-cd aquvaris-platform
-npm install
-
-# 3. Configure as variáveis de ambiente
-cp .env.example .env.local
-# Preencha: NEXT_PUBLIC_SUPABASE_URL, SUPABASE_KEY, GOOGLE_MAPS_KEY, OPENAI_KEY
-
-# 4. Rode em desenvolvimento
-npm run dev
-```
+| Atribuição de impacto | 📅 Próxima fase |
+| Crédito de Impacto Ambiental Real | 📅 Visão de longo prazo |
 
 ---
 
@@ -158,12 +199,14 @@ npm run dev
 **Bruna Preschadt de Oliveira**
 Data Engineer & AI Developer · Engenharia Ambiental
 
+A combinação de formação em engenharia ambiental com expertise em engenharia de dados e IA posiciona a Aquvaris na interseção exata onde o problema existe: entre os dados ambientais e a inteligência necessária para transformá-los em decisões.
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Bruna%20Preschadt-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/bruna-preschadt-de-oliveira-1550ab1ab/)
-[![GitHub](https://img.shields.io/badge/GitHub-bpreschad--gif-181717?style=flat&logo=github)](https://github.com/bpreschad-gif)
+[![GitHub](https://img.shields.io/badge/GitHub-bpreschac--gif-181717?style=flat&logo=github)](https://github.com/bpreschac-gif)
 [![Kaggle](https://img.shields.io/badge/Kaggle-brunapreschadt-20BEFF?style=flat&logo=kaggle)](https://www.kaggle.com/brunapreschadt)
 
 ---
 
 <div align="center">
-<sub>Aquvaris AI © 2025 · Inteligência ambiental e operacional · Brasil</sub>
+<sub>Aquvaris AI © 2025 · Environmental Intelligence · Brasil</sub>
 </div>
