@@ -7,7 +7,7 @@ import {
   Trash2, 
   AlertTriangle, 
   FileText, 
-  BrainCircuit, 
+  BrainCircuit, Users, 
   Settings,
   ShieldCheck,
   ChevronRight,
@@ -25,8 +25,9 @@ export function Sidebar({ onAddUnit, activeTab, onTabChange }: SidebarProps) {
     { id: 'dashboard', icon: LayoutDashboard, label: 'Geral', mobileLabel: 'Home' },
     { id: 'surveys', icon: ClipboardCheck, label: 'Vistorias', mobileLabel: 'Vistorias' },
     { id: 'units', icon: Building2, label: 'Empresas', mobileLabel: 'Unidades' },
-    { id: 'diagnostics', icon: BrainCircuit, label: 'IA', mobileLabel: 'IA' },
-    { id: 'portfolio', icon: Briefcase, label: 'Portfólio', mobileLabel: 'Carreira' },
+    { id: 'diagnostics', icon: BrainCircuit, Users, label: 'IA', mobileLabel: 'IA' },
+    { id: 'crm', icon: Users, label: 'CRM', mobileLabel: 'CRM' },
+    { id: 'portfolio', icon: Briefcase, Users, label: 'Portfólio', mobileLabel: 'Carreira' },
   ];
 
   const secondaryItems = [

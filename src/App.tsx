@@ -14,6 +14,7 @@ import { AIDiagnosis } from './components/AIDiagnosis';
 import { GlassCard } from './components/ui/GlassCard';
 import { SurveyDashboard } from './components/SurveyDashboard';
 import { Portfolio } from './components/Portfolio';
+import { CRMKanban } from './components/CRMKanban';
 import { CompanyDashboard } from './components/CompanyDashboard';
 import { IntelligentMap } from './components/IntelligentMap';
 import { AIDashboard } from './components/AIDashboard';
@@ -94,6 +95,7 @@ const TAB_LABELS: Record<string, string> = {
   surveys:     'Vistorias',
   units:       'Empresas',
   diagnostics: 'IA',
+  crm:         'CRM',
   portfolio:   'Portfólio',
   map:         'Mapa Inteligente',
   hydric:      'Consumo Hídrico',
@@ -358,8 +360,9 @@ export default function App() {
         {activeTab === 'risks'       && <RiskDashboard units={units} onStartSurvey={startSurveyForUnit} />}
         {activeTab === 'reports'     && <ReportsDashboard units={units} />}
         {activeTab === 'portfolio'   && <Portfolio />}
+        {activeTab === 'crm'         && user && <CRMKanban userId={user.uid} />}
 
-        {!['dashboard','surveys','units','diagnostics','map','hydric','waste','risks','reports','portfolio'].includes(activeTab) && (
+        {!['dashboard','surveys','units','diagnostics','map','hydric','waste','risks','reports','portfolio','crm'].includes(activeTab) && (
           <div className="flex-1 flex items-center justify-center opacity-30">
             <div className="text-center group">
               <Settings className="mx-auto mb-4 group-hover:rotate-45 transition-transform" size={48} />
