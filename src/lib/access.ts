@@ -12,33 +12,34 @@ import {
 } from 'firebase/firestore';
 import { db } from './firebase';
 
-// ─── Tipos ────────────────────────────────────────────────────────────────────
+// ── Tipos ──────────────────────────────────────────────────────────────────
 
 export type AccessStatus = 'pending' | 'approved' | 'rejected';
 export type UserRole     = 'admin' | 'company' | 'inspector';
 export type PlanType     = 'starter' | 'professional' | 'enterprise' | 'trial';
 
 export interface AccessRequest {
-  uid:         string;
-  email:       string;
-  displayName: string;
-  photoURL?:   string;
-  status:      AccessStatus;
-  role:        UserRole;
-  plan:        PlanType;
-  requestedAt: string;
-  reviewedAt?: string;
-  reviewedBy?: string;
-  notes?:      string;
+  uid:          string;
+  email:        string;
+  displayName:  string;
+  photoURL?:    string;
+  status:       AccessStatus;
+  role:         UserRole;
+  plan:         PlanType;
+  requestedAt:  string;
+  reviewedAt?:  string;
+  reviewedBy?:  string;
+  notes?:       string;
+  tenantId?:    string | null;   // null para admin, UUID para company/inspector
+  companyName?: string | null;   // nome legível da empresa (separado do tenantId)
 }
 
-// ─── Emails de admin (você) ───────────────────────────────────────────────────
-// Adicione seu email aqui para ter acesso irrestrito ao painel admin
+// ── Emails de admin ────────────────────────────────────────────────────────
 const ADMIN_EMAILS = [
-  'bpreschad@gmail.com', // substitua pelo seu email real
+  'bpreschad@gmail.com',
 ];
 
-// ─── Funções públicas ─────────────────────────────────────────────────────────
+// ── Funções públicas ───────────────────────────────────────────────────────
 
 /** Verifica se um email é admin */
 export function isAdminEmail(email: string): boolean {
@@ -54,27 +55,30 @@ export async function getAccessRequest(uid: string): Promise<AccessRequest | nul
   if (!snap.exists()) return null;
   const data = snap.data() as Record<string, unknown>;
   return {
-    uid:         data.uid         as string,
-    email:       data.email       as string,
-    displayName: data.displayName as string,
-    photoURL:    data.photoURL    as string | undefined,
-    status:      data.status      as AccessStatus,
-    role:        data.role        as UserRole,
-    plan:        data.plan        as PlanType,
-    requestedAt: data.requestedAt instanceof Timestamp
-                   ? data.requestedAt.toDate().toISOString()
-                   : data.requestedAt as string,
-    reviewedAt:  data.reviewedAt instanceof Timestamp
-                   ? data.reviewedAt.toDate().toISOString()
-                   : data.reviewedAt as string | undefined,
-    reviewedBy:  data.reviewedBy as string | undefined,
-    notes:       data.notes      as string | undefined,
+    uid:          data.uid          as string,
+    email:        data.email        as string,
+    displayName:  data.displayName  as string,
+    photoURL:     data.photoURL     as string | undefined,
+    status:       data.status       as AccessStatus,
+    role:         data.role         as UserRole,
+    plan:         data.plan         as PlanType,
+    requestedAt:  data.requestedAt instanceof Timestamp
+                    ? data.requestedAt.toDate().toISOString()
+                    : data.requestedAt as string,
+    reviewedAt:   data.reviewedAt instanceof Timestamp
+                    ? data.reviewedAt.toDate().toISOString()
+                    : data.reviewedAt as string | undefined,
+    reviewedBy:   data.reviewedBy   as string | undefined,
+    notes:        data.notes        as string | undefined,
+    tenantId:     (data.tenantId    as string | null | undefined) ?? null,
+    companyName:  (data.companyName as string | null | undefined) ?? null,
   };
 }
 
 /**
  * Cria ou atualiza uma solicitação de acesso.
  * Chamado automaticamente após o primeiro login.
+ * O usuário não define o próprio tenantId — isso é feito pelo admin na aprovação.
  */
 export async function requestAccess(
   uid: string,
@@ -85,17 +89,17 @@ export async function requestAccess(
   const existing = await getAccessRequest(uid);
   if (existing) return; // já solicitou, não sobrescreve
 
-  // Admins são aprovados automaticamente
   const isAdmin = isAdminEmail(email);
-
   await setDoc(doc(db, 'accessRequests', uid), {
     uid,
     email,
     displayName,
-    photoURL: photoURL || '',
+    photoURL:    photoURL || '',
     status:      isAdmin ? 'approved' : 'pending',
     role:        isAdmin ? 'admin'    : 'company',
     plan:        isAdmin ? 'enterprise' : 'trial',
+    tenantId:    null,
+    companyName: null,
     requestedAt: serverTimestamp(),
     reviewedAt:  isAdmin ? serverTimestamp() : null,
     reviewedBy:  isAdmin ? 'system' : null,
@@ -104,6 +108,11 @@ export async function requestAccess(
 
 /**
  * Aprova um usuário (chamado pelo admin).
+ *
+ * Regras arquiteturais:
+ * - role 'admin'     → tenantId sempre null
+ * - role 'company'   → tenantId obrigatório
+ * - role 'inspector' → tenantId obrigatório
  */
 export async function approveUser(
   uid: string,
@@ -111,14 +120,30 @@ export async function approveUser(
   plan: PlanType,
   reviewerEmail: string,
   notes?: string,
+  tenantId?: string | null,
+  companyName?: string | null,
 ): Promise<void> {
+
+  // Validação arquitetural: company e inspector exigem tenantId
+  if ((role === 'company' || role === 'inspector') && !tenantId) {
+    throw new Error('tenantId é obrigatório para company e inspector.');
+  }
+
+  // Admin é sempre global — nunca pertence a um tenant
+  if (role === 'admin') {
+    tenantId    = null;
+    companyName = null;
+  }
+
   await updateDoc(doc(db, 'accessRequests', uid), {
-    status:     'approved',
+    status:      'approved',
     role,
     plan,
-    reviewedAt: serverTimestamp(),
-    reviewedBy: reviewerEmail,
-    notes:      notes || '',
+    reviewedAt:  serverTimestamp(),
+    reviewedBy:  reviewerEmail,
+    notes:       notes       ?? null,
+    tenantId:    tenantId    ?? null,
+    companyName: companyName ?? null,
   });
 }
 
@@ -134,7 +159,7 @@ export async function rejectUser(
     status:     'rejected',
     reviewedAt: serverTimestamp(),
     reviewedBy: reviewerEmail,
-    notes:      notes || '',
+    notes:      notes ?? null,
   });
 }
 
@@ -148,21 +173,23 @@ export async function listAccessRequests(): Promise<AccessRequest[]> {
   return snap.docs.map(d => {
     const data = d.data() as Record<string, unknown>;
     return {
-      uid:         data.uid         as string,
-      email:       data.email       as string,
-      displayName: data.displayName as string,
-      photoURL:    data.photoURL    as string | undefined,
-      status:      data.status      as AccessStatus,
-      role:        data.role        as UserRole,
-      plan:        data.plan        as PlanType,
-      requestedAt: data.requestedAt instanceof Timestamp
-                     ? data.requestedAt.toDate().toISOString()
-                     : data.requestedAt as string,
-      reviewedAt:  data.reviewedAt instanceof Timestamp
-                     ? data.reviewedAt.toDate().toISOString()
-                     : data.reviewedAt as string | undefined,
-      reviewedBy:  data.reviewedBy as string | undefined,
-      notes:       data.notes      as string | undefined,
+      uid:          data.uid          as string,
+      email:        data.email        as string,
+      displayName:  data.displayName  as string,
+      photoURL:     data.photoURL     as string | undefined,
+      status:       data.status       as AccessStatus,
+      role:         data.role         as UserRole,
+      plan:         data.plan         as PlanType,
+      requestedAt:  data.requestedAt instanceof Timestamp
+                      ? data.requestedAt.toDate().toISOString()
+                      : data.requestedAt as string,
+      reviewedAt:   data.reviewedAt instanceof Timestamp
+                      ? data.reviewedAt.toDate().toISOString()
+                      : data.reviewedAt as string | undefined,
+      reviewedBy:   data.reviewedBy   as string | undefined,
+      notes:        data.notes        as string | undefined,
+      tenantId:     (data.tenantId    as string | null | undefined) ?? null,
+      companyName:  (data.companyName as string | null | undefined) ?? null,
     };
   });
 }

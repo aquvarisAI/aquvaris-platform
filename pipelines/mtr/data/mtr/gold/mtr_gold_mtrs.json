@@ -1,0 +1,10 @@
+{
+  "gold_id": "gld_7711295eb793",
+  "categoria": "mtrs_emitidos_recebidos",
+  "descricao": "Série temporal de MTRs emitidos e recebidos — taxa de conformidade de recebimento",
+  "serie": [],
+  "media_emitidos": 0.0,
+  "media_recebidos": 0.0,
+  "gerado_em": "2026-09-17T01:49:04.885858+00:00",
+  "schema_version": "mtr_gold_v0.1"
+}

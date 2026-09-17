@@ -25,7 +25,7 @@ import { ReportsDashboard } from './components/ReportsDashboard';
 import { AccessGate } from './components/AccessGate';
 import { AdminPanel } from './components/AdminPanel';
 import { requestAccess, getAccessRequest, isAdminEmail } from './lib/access';
-import type { AccessStatus } from './lib/access';
+import type { AccessStatus, UserRole } from './lib/access';
 
 const DEFAULT_MOCK_UNITS: UnitIntelligence[] = [
   {
@@ -105,27 +105,27 @@ const TAB_LABELS: Record<string, string> = {
 };
 
 export default function App() {
-  const [user, setUser]                         = useState<User | null>(null);
-  const [units, setUnits]                       = useState<UnitIntelligence[]>(DEFAULT_MOCK_UNITS);
-  const [selectedUnit, setSelectedUnit]         = useState<UnitIntelligence | null>(null);
+  const [user, setUser]                               = useState<User | null>(null);
+  const [units, setUnits]                             = useState<UnitIntelligence[]>(DEFAULT_MOCK_UNITS);
+  const [selectedUnit, setSelectedUnit]               = useState<UnitIntelligence | null>(null);
   const [isDiagnosticLoading, setIsDiagnosticLoading] = useState(false);
-  const [aiDiagnostic, setAiDiagnostic]         = useState<string | null>(null);
-  const [searchTerm, setSearchTerm]             = useState('');
-  const [isSurveyOpen, setIsSurveyOpen]         = useState(false);
-  const [isAddUnitOpen, setIsAddUnitOpen]       = useState(false);
-  const [unitSurveys, setUnitSurveys]           = useState<TechnicalSurvey[]>([]);
-  const [activeTab, setActiveTab]               = useState('dashboard');
-  const [accessStatus, setAccessStatus]         = useState<AccessStatus | 'loading' | 'admin'>('loading');
-  const [isAdminPanelOpen, setIsAdminPanelOpen] = useState(false);
+  const [aiDiagnostic, setAiDiagnostic]               = useState<string | null>(null);
+  const [searchTerm, setSearchTerm]                   = useState('');
+  const [isSurveyOpen, setIsSurveyOpen]               = useState(false);
+  const [isAddUnitOpen, setIsAddUnitOpen]             = useState(false);
+  const [unitSurveys, setUnitSurveys]                 = useState<TechnicalSurvey[]>([]);
+  const [activeTab, setActiveTab]                     = useState('dashboard');
+  const [accessStatus, setAccessStatus]               = useState<AccessStatus | 'loading' | 'admin'>('loading');
+  const [tenantId, setTenantId]                       = useState<string | null>(null);
+  const [userRole, setUserRole]                       = useState<UserRole | null>(null);
+  const [isAdminPanelOpen, setIsAdminPanelOpen]       = useState(false);
 
   useEffect(() => {
     testFirestoreConnection();
     let stopSnapshot: (() => void) | null = null;
-
     const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
       setUser(currentUser);
       if (stopSnapshot) { stopSnapshot(); stopSnapshot = null; }
-
       if (currentUser) {
         await requestAccess(
           currentUser.uid,
@@ -133,15 +133,14 @@ export default function App() {
           currentUser.displayName || 'Usuário',
           currentUser.photoURL || undefined,
         );
-
         const access = await getAccessRequest(currentUser.uid);
-
+        setTenantId(access?.tenantId ?? null);
+        setUserRole(access?.role ?? null);
         if (isAdminEmail(currentUser.email!)) {
           setAccessStatus('admin');
         } else {
           setAccessStatus(access?.status || 'pending');
         }
-
         if (access?.status === 'approved' || isAdminEmail(currentUser.email!)) {
           const q = query(collection(db, 'units'), where('ownerId', '==', currentUser.uid));
           stopSnapshot = onSnapshot(q, (snapshot) => {
@@ -157,10 +156,11 @@ export default function App() {
         }
       } else {
         setAccessStatus('loading');
+        setTenantId(null);
+        setUserRole(null);
         setUnits(DEFAULT_MOCK_UNITS);
       }
     });
-
     return () => { unsubscribe(); if (stopSnapshot) stopSnapshot(); };
   }, []);
 
@@ -207,7 +207,6 @@ export default function App() {
         activeTab={activeTab}
         onTabChange={setActiveTab}
       />
-
       <main className="flex-1 flex flex-col overflow-hidden relative pb-20 lg:pb-0">
         <header className="h-16 lg:h-20 border-b border-white/5 bg-[#0B1118]/80 backdrop-blur-md px-6 lg:px-8 flex items-center justify-between z-10 shrink-0">
           <div className="flex flex-col">
@@ -216,7 +215,6 @@ export default function App() {
             </h2>
             <p className="hidden xs:block text-[9px] font-mono text-gray-500 uppercase tracking-widest mt-1 opacity-60">Intelligence Hub</p>
           </div>
-
           <div className="flex items-center gap-3 lg:gap-6">
             <div className="hidden lg:relative lg:group lg:block">
               <Search size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 group-focus-within:text-emerald-400 transition-colors" />
@@ -279,7 +277,6 @@ export default function App() {
                 Inspecionar
               </button>
             </header>
-
             <section className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3 lg:gap-4 font-mono">
               <MetricCard title="Empresas" value={units.length.toString()} status="+12%" />
               <MetricCard title="Consumo Hídrico" value="1.8M L" status="-8%" trend="down" />
@@ -287,7 +284,6 @@ export default function App() {
               <MetricCard title="Alertas" value={(units.reduce((acc, u) => acc + u.alerts.length, 0) || 15).toString()} status="Ativos" trend="up" alert />
               <MetricCard title="Score Médio" value={`${Math.round(units.reduce((acc, u) => acc + u.currentScore, 0) / units.length)}/100`} status="Bom" />
             </section>
-
             <section className="grid grid-cols-1 xl:grid-cols-3 gap-6">
               <div className="xl:col-span-2 overflow-hidden rounded-2xl border border-white/5">
                 <EnvironmentalMap />
@@ -318,7 +314,6 @@ export default function App() {
                 </button>
               </GlassCard>
             </section>
-
             <section className="grid grid-cols-1 xl:grid-cols-2 gap-6 pb-8">
               <AIDiagnosis diagnostic={aiDiagnostic} onExecute={getDiagnostic} loading={isDiagnosticLoading} />
               <GlassCard>
@@ -360,8 +355,13 @@ export default function App() {
         {activeTab === 'risks'       && <RiskDashboard units={units} onStartSurvey={startSurveyForUnit} />}
         {activeTab === 'reports'     && <ReportsDashboard units={units} />}
         {activeTab === 'portfolio'   && <Portfolio />}
-        {activeTab === 'crm'         && user && <CRMKanban userId={user.uid} />}
-
+        {activeTab === 'crm' && user && (userRole === 'admin' || tenantId) && (
+          <CRMKanban
+            userId={user.uid}
+            tenantId={tenantId}
+            isAdmin={userRole === 'admin'}
+          />
+        )}
         {!['dashboard','surveys','units','diagnostics','map','hydric','waste','risks','reports','portfolio','crm'].includes(activeTab) && (
           <div className="flex-1 flex items-center justify-center opacity-30">
             <div className="text-center group">
@@ -385,11 +385,9 @@ export default function App() {
           }}
         />
       )}
-
       {isAddUnitOpen && (
         <AddUnitForm onClose={() => setIsAddUnitOpen(false)} onSuccess={() => setIsAddUnitOpen(false)} />
       )}
-
       {isAdminPanelOpen && user && (
         <AdminPanel currentUser={user} onClose={() => setIsAdminPanelOpen(false)} />
       )}

@@ -1,0 +1,20 @@
+{
+  "gold_id": "gld_6f1c1109bde9",
+  "categoria": "indicadores_consolidados",
+  "descricao": "Painel executivo MTR — indicadores do período mais recente",
+  "periodo_referencia": "N/A",
+  "indicadores": {
+    "geradores_cadastrados": 162165,
+    "crescimento_geradores_pct": 10.56,
+    "mtrs_emitidos": null,
+    "mtrs_recebidos": null,
+    "taxa_recebimento_pct": null,
+    "alerta_baixo_recebimento": false,
+    "total_residuos_toneladas": 0,
+    "tecnologia_dominante": "Reciclagem",
+    "volume_tec_dominante_t": 475262.0,
+    "total_anomalias_detectadas": 0
+  },
+  "gerado_em": "2026-09-17T01:49:04.899101+00:00",
+  "schema_version": "mtr_gold_v0.1"
+}

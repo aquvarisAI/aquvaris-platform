@@ -332,7 +332,15 @@ function NovoLeadModal({
 }
 
 // ── Componente principal ─────────────────────────────────────
-export function CRMKanban({ userId }: { userId: string }) {
+export function CRMKanban({
+  userId,
+  tenantId,
+  isAdmin = false,
+}: {
+  userId:   string;
+  tenantId: string | null;
+  isAdmin?: boolean;
+}) {
   const [leads, setLeads] = useState<Lead[]>([]);
   const [loading, setLoading] = useState(true);
   const [novoLeadOpen, setNovoLeadOpen] = useState(false);

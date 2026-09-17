@@ -1,0 +1,4099 @@
+{
+  "gold_id": "gld_6df3bbb8f00b",
+  "categoria": "residuos_por_tecnologia",
+  "descricao": "Ranking e séries temporais de tecnologias de destinação — tendências e anomalias",
+  "mes_referencia": "2026-08",
+  "ranking": [
+    {
+      "posicao": 1,
+      "tecnologia": "Reciclagem",
+      "quantidade_toneladas": 475262.0
+    },
+    {
+      "posicao": 2,
+      "tecnologia": "Aterro",
+      "quantidade_toneladas": 212653.0
+    },
+    {
+      "posicao": 3,
+      "tecnologia": "Compostagem",
+      "quantidade_toneladas": 70997.0
+    },
+    {
+      "posicao": 4,
+      "tecnologia": "Recuperação energética",
+      "quantidade_toneladas": 60942.0
+    },
+    {
+      "posicao": 5,
+      "tecnologia": "Tratamento de Efluentes",
+      "quantidade_toneladas": 54160.0
+    },
+    {
+      "posicao": 6,
+      "tecnologia": "Reutilização",
+      "quantidade_toneladas": 51704.0
+    },
+    {
+      "posicao": 7,
+      "tecnologia": "Armazenamento com ou sem",
+      "quantidade_toneladas": 34322.0
+    },
+    {
+      "posicao": 8,
+      "tecnologia": "Uso Agrícola",
+      "quantidade_toneladas": 21721.0
+    },
+    {
+      "posicao": 9,
+      "tecnologia": "Biodigestão",
+      "quantidade_toneladas": 20224.0
+    },
+    {
+      "posicao": 10,
+      "tecnologia": "Incineração",
+      "quantidade_toneladas": 13013.0
+    },
+    {
+      "posicao": 11,
+      "tecnologia": "Blendagem para Coprocessamento",
+      "quantidade_toneladas": 7612.0
+    },
+    {
+      "posicao": 12,
+      "tecnologia": "Coprocessamento",
+      "quantidade_toneladas": 7612.0
+    },
+    {
+      "posicao": 13,
+      "tecnologia": "Uso Alimentação Animal",
+      "quantidade_toneladas": 6989.0
+    },
+    {
+      "posicao": 14,
+      "tecnologia": "Autoclave",
+      "quantidade_toneladas": 4918.0
+    },
+    {
+      "posicao": 15,
+      "tecnologia": "Transbordo de RSU",
+      "quantidade_toneladas": 1505.0
+    },
+    {
+      "posicao": 16,
+      "tecnologia": "Armazenamento de Resíduos de",
+      "quantidade_toneladas": 1249.0
+    },
+    {
+      "posicao": 17,
+      "tecnologia": "Tratamento Térmico",
+      "quantidade_toneladas": 570.0
+    },
+    {
+      "posicao": 18,
+      "tecnologia": "Rerrefino",
+      "quantidade_toneladas": 347.0
+    },
+    {
+      "posicao": 19,
+      "tecnologia": "Descontaminação de Lâmpadas",
+      "quantidade_toneladas": 46.0
+    },
+    {
+      "posicao": 20,
+      "tecnologia": "Biorremediação",
+      "quantidade_toneladas": 37.0
+    },
+    {
+      "posicao": 21,
+      "tecnologia": "Dessorção Térmica",
+      "quantidade_toneladas": 30.0
+    },
+    {
+      "posicao": 22,
+      "tecnologia": "Pirólise",
+      "quantidade_toneladas": 17.0
+    },
+    {
+      "posicao": 23,
+      "tecnologia": "Desativação da Fosfina",
+      "quantidade_toneladas": 6.0
+    },
+    {
+      "posicao": 24,
+      "tecnologia": "Carbonização",
+      "quantidade_toneladas": 1.0
+    },
+    {
+      "posicao": 25,
+      "tecnologia": "Gaseificação",
+      "quantidade_toneladas": 0.0
+    },
+    {
+      "posicao": 26,
+      "tecnologia": "Microondas",
+      "quantidade_toneladas": 0.0
+    },
+    {
+      "posicao": 27,
+      "tecnologia": "Pesquisa/Estudos",
+      "quantidade_toneladas": 0.0
+    }
+  ],
+  "series": {
+    "Armazenamento com ou sem": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 62141.0,
+          "variacao_pct": null,
+          "zscore": 1.315,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 55243.0,
+          "variacao_pct": -11.1,
+          "zscore": 0.526,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 61601.0,
+          "variacao_pct": 11.51,
+          "zscore": 1.253,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 61296.0,
+          "variacao_pct": -0.5,
+          "zscore": 1.218,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 48076.0,
+          "variacao_pct": -21.57,
+          "zscore": -0.295,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 51994.0,
+          "variacao_pct": 8.15,
+          "zscore": 0.154,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 61905.0,
+          "variacao_pct": 19.06,
+          "zscore": 1.288,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 50135.0,
+          "variacao_pct": -19.01,
+          "zscore": -0.059,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 58289.0,
+          "variacao_pct": 16.26,
+          "zscore": 0.874,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 53325.0,
+          "variacao_pct": -8.52,
+          "zscore": 0.306,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 41889.0,
+          "variacao_pct": -21.45,
+          "zscore": -1.003,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 43545.0,
+          "variacao_pct": 3.95,
+          "zscore": -0.813,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 46887.0,
+          "variacao_pct": 7.67,
+          "zscore": -0.431,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 48498.0,
+          "variacao_pct": 3.44,
+          "zscore": -0.246,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 53800.0,
+          "variacao_pct": 10.93,
+          "zscore": 0.36,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 47195.0,
+          "variacao_pct": -12.28,
+          "zscore": -0.395,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 30007.0,
+          "variacao_pct": -36.42,
+          "zscore": -2.362,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 50439.0,
+          "variacao_pct": 68.09,
+          "zscore": -0.024,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 52412.0,
+          "variacao_pct": 3.91,
+          "zscore": 0.202,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 34322.0,
+          "variacao_pct": -34.51,
+          "zscore": -1.868,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 50649.95,
+      "desvio_padrao": 8739.07,
+      "total_periodo": 1012999.0,
+      "tendencia": "declínio",
+      "slope_mensal": -985.01,
+      "ultimo_valor": 34322.0
+    },
+    "Armazenamento de Resíduos de": {
+      "serie": [
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.981,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 107.0,
+          "variacao_pct": null,
+          "zscore": -0.762,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 243.0,
+          "variacao_pct": 127.1,
+          "zscore": -0.482,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 388.0,
+          "variacao_pct": 59.67,
+          "zscore": -0.185,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 881.0,
+          "variacao_pct": 127.06,
+          "zscore": 0.827,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 1249.0,
+          "variacao_pct": 41.77,
+          "zscore": 1.583,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 478.0,
+      "desvio_padrao": 487.09,
+      "total_periodo": 2868.0,
+      "tendencia": "crescimento",
+      "slope_mensal": 248.91,
+      "ultimo_valor": 1249.0
+    },
+    "Aterro": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 319384.0,
+          "variacao_pct": null,
+          "zscore": 1.282,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 282292.0,
+          "variacao_pct": -11.61,
+          "zscore": 0.406,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 278889.0,
+          "variacao_pct": -1.21,
+          "zscore": 0.326,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 278499.0,
+          "variacao_pct": -0.14,
+          "zscore": 0.317,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 254040.0,
+          "variacao_pct": -8.78,
+          "zscore": -0.261,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 317506.0,
+          "variacao_pct": 24.98,
+          "zscore": 1.238,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 386857.0,
+          "variacao_pct": 21.84,
+          "zscore": 2.876,
+          "anomaly_flag": true
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 260564.0,
+          "variacao_pct": -32.65,
+          "zscore": -0.107,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 272463.0,
+          "variacao_pct": 4.57,
+          "zscore": 0.174,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 256284.0,
+          "variacao_pct": -5.94,
+          "zscore": -0.208,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 209436.0,
+          "variacao_pct": -18.28,
+          "zscore": -1.314,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 271214.0,
+          "variacao_pct": 29.5,
+          "zscore": 0.145,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 259880.0,
+          "variacao_pct": -4.18,
+          "zscore": -0.123,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 220536.0,
+          "variacao_pct": -15.14,
+          "zscore": -1.052,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 268454.0,
+          "variacao_pct": 21.73,
+          "zscore": 0.079,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 251069.0,
+          "variacao_pct": -6.48,
+          "zscore": -0.331,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 201745.0,
+          "variacao_pct": -19.65,
+          "zscore": -1.496,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 246117.0,
+          "variacao_pct": 21.99,
+          "zscore": -0.448,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 253922.0,
+          "variacao_pct": 3.17,
+          "zscore": -0.264,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 212653.0,
+          "variacao_pct": -16.25,
+          "zscore": -1.238,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 265090.2,
+      "desvio_padrao": 42342.59,
+      "total_periodo": 5301804.0,
+      "tendencia": "declínio",
+      "slope_mensal": -4279.68,
+      "ultimo_valor": 212653.0
+    },
+    "Autoclave": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 3984.0,
+          "variacao_pct": null,
+          "zscore": -0.84,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 6652.0,
+          "variacao_pct": 66.97,
+          "zscore": -0.292,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 21160.0,
+          "variacao_pct": 218.1,
+          "zscore": 2.682,
+          "anomaly_flag": true
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 19283.0,
+          "variacao_pct": -8.87,
+          "zscore": 2.297,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 4457.0,
+          "variacao_pct": -76.89,
+          "zscore": -0.743,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 4476.0,
+          "variacao_pct": 0.43,
+          "zscore": -0.739,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 7062.0,
+          "variacao_pct": 57.77,
+          "zscore": -0.208,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 10599.0,
+          "variacao_pct": 50.08,
+          "zscore": 0.517,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 6722.0,
+          "variacao_pct": -36.58,
+          "zscore": -0.278,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 12371.0,
+          "variacao_pct": 84.04,
+          "zscore": 0.88,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 5520.0,
+          "variacao_pct": -55.38,
+          "zscore": -0.525,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 4577.0,
+          "variacao_pct": -17.08,
+          "zscore": -0.718,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 5955.0,
+          "variacao_pct": 30.11,
+          "zscore": -0.435,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 6983.0,
+          "variacao_pct": 17.26,
+          "zscore": -0.225,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 6475.0,
+          "variacao_pct": -7.27,
+          "zscore": -0.329,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 8528.0,
+          "variacao_pct": 31.71,
+          "zscore": 0.092,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 3664.0,
+          "variacao_pct": -57.04,
+          "zscore": -0.905,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 5633.0,
+          "variacao_pct": 53.74,
+          "zscore": -0.501,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 12550.0,
+          "variacao_pct": 122.79,
+          "zscore": 0.917,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 4918.0,
+          "variacao_pct": -60.81,
+          "zscore": -0.648,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 8078.45,
+      "desvio_padrao": 4877.19,
+      "total_periodo": 161569.0,
+      "tendencia": "declínio",
+      "slope_mensal": -219.72,
+      "ultimo_valor": 4918.0
+    },
+    "Biodigestão": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 2942.0,
+          "variacao_pct": null,
+          "zscore": -1.76,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 3860.0,
+          "variacao_pct": 31.2,
+          "zscore": -1.603,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 6100.0,
+          "variacao_pct": 58.03,
+          "zscore": -1.221,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 6531.0,
+          "variacao_pct": 7.07,
+          "zscore": -1.147,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 6985.0,
+          "variacao_pct": 6.95,
+          "zscore": -1.07,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 8182.0,
+          "variacao_pct": 17.14,
+          "zscore": -0.865,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 11655.0,
+          "variacao_pct": 42.45,
+          "zscore": -0.272,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 14568.0,
+          "variacao_pct": 24.99,
+          "zscore": 0.225,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 15950.0,
+          "variacao_pct": 9.49,
+          "zscore": 0.461,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 13672.0,
+          "variacao_pct": -14.28,
+          "zscore": 0.072,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 12148.0,
+          "variacao_pct": -11.15,
+          "zscore": -0.188,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 14668.0,
+          "variacao_pct": 20.74,
+          "zscore": 0.242,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 15988.0,
+          "variacao_pct": 9.0,
+          "zscore": 0.468,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 16558.0,
+          "variacao_pct": 3.57,
+          "zscore": 0.565,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 18102.0,
+          "variacao_pct": 9.32,
+          "zscore": 0.829,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 16440.0,
+          "variacao_pct": -9.18,
+          "zscore": 0.545,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 15244.0,
+          "variacao_pct": -7.27,
+          "zscore": 0.341,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 21561.0,
+          "variacao_pct": 41.44,
+          "zscore": 1.42,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 23591.0,
+          "variacao_pct": 9.42,
+          "zscore": 1.766,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 20224.0,
+          "variacao_pct": -14.27,
+          "zscore": 1.191,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 13248.45,
+      "desvio_padrao": 5855.19,
+      "total_periodo": 264969.0,
+      "tendencia": "crescimento",
+      "slope_mensal": 931.06,
+      "ultimo_valor": 20224.0
+    },
+    "Biorremediação": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 459.0,
+          "variacao_pct": null,
+          "zscore": -0.689,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 332.0,
+          "variacao_pct": -27.67,
+          "zscore": -0.787,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 41.0,
+          "variacao_pct": -87.65,
+          "zscore": -1.01,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 34.0,
+          "variacao_pct": -17.07,
+          "zscore": -1.015,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 665.0,
+          "variacao_pct": 1855.88,
+          "zscore": -0.532,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 21.0,
+          "variacao_pct": -96.84,
+          "zscore": -1.025,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 640.0,
+          "variacao_pct": 2947.62,
+          "zscore": -0.551,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 1562.0,
+          "variacao_pct": 144.06,
+          "zscore": 0.155,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 2179.0,
+          "variacao_pct": 39.5,
+          "zscore": 0.628,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 1606.0,
+          "variacao_pct": -26.3,
+          "zscore": 0.189,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 43.0,
+          "variacao_pct": -97.32,
+          "zscore": -1.008,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 28.0,
+          "variacao_pct": -34.88,
+          "zscore": -1.019,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 3309.0,
+          "variacao_pct": 11717.86,
+          "zscore": 1.493,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 3536.0,
+          "variacao_pct": 6.86,
+          "zscore": 1.667,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 3617.0,
+          "variacao_pct": 2.29,
+          "zscore": 1.729,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 2501.0,
+          "variacao_pct": -30.85,
+          "zscore": 0.874,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 2392.0,
+          "variacao_pct": -4.36,
+          "zscore": 0.791,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 2848.0,
+          "variacao_pct": 19.06,
+          "zscore": 1.14,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 1336.0,
+          "variacao_pct": -53.09,
+          "zscore": -0.018,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 37.0,
+          "variacao_pct": -97.23,
+          "zscore": -1.013,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 1359.3,
+      "desvio_padrao": 1305.88,
+      "total_periodo": 27186.0,
+      "tendencia": "crescimento",
+      "slope_mensal": 116.81,
+      "ultimo_valor": 37.0
+    },
+    "Blendagem para Coprocessamento": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 8629.0,
+          "variacao_pct": null,
+          "zscore": 0.025,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 8727.0,
+          "variacao_pct": 1.14,
+          "zscore": 0.097,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 9339.0,
+          "variacao_pct": 7.01,
+          "zscore": 0.549,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 10707.0,
+          "variacao_pct": 14.65,
+          "zscore": 1.558,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 9244.0,
+          "variacao_pct": -13.66,
+          "zscore": 0.479,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 9184.0,
+          "variacao_pct": -0.65,
+          "zscore": 0.434,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 11506.0,
+          "variacao_pct": 25.28,
+          "zscore": 2.148,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 9628.0,
+          "variacao_pct": -16.32,
+          "zscore": 0.762,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 9015.0,
+          "variacao_pct": -6.37,
+          "zscore": 0.31,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 8254.0,
+          "variacao_pct": -8.44,
+          "zscore": -0.252,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 7382.0,
+          "variacao_pct": -10.56,
+          "zscore": -0.895,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 6344.0,
+          "variacao_pct": -14.06,
+          "zscore": -1.661,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 5608.0,
+          "variacao_pct": -11.6,
+          "zscore": -2.204,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 7026.0,
+          "variacao_pct": 25.29,
+          "zscore": -1.158,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 8322.0,
+          "variacao_pct": 18.45,
+          "zscore": -0.202,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 8996.0,
+          "variacao_pct": 8.1,
+          "zscore": 0.296,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 8760.0,
+          "variacao_pct": -2.62,
+          "zscore": 0.122,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 8718.0,
+          "variacao_pct": -0.48,
+          "zscore": 0.091,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 8903.0,
+          "variacao_pct": 2.12,
+          "zscore": 0.227,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 7612.0,
+          "variacao_pct": -14.5,
+          "zscore": -0.725,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 8595.2,
+      "desvio_padrao": 1355.22,
+      "total_periodo": 171904.0,
+      "tendencia": "declínio",
+      "slope_mensal": -91.57,
+      "ultimo_valor": 7612.0
+    },
+    "Carbonização": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 8.0,
+          "variacao_pct": null,
+          "zscore": -0.37,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 163.0,
+          "variacao_pct": 1937.5,
+          "zscore": 3.772,
+          "anomaly_flag": true
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": -100.0,
+          "zscore": -0.584,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 6.0,
+          "variacao_pct": null,
+          "zscore": -0.424,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 10.0,
+          "variacao_pct": 66.67,
+          "zscore": -0.317,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 7.0,
+          "variacao_pct": -30.0,
+          "zscore": -0.397,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 63.0,
+          "variacao_pct": 800.0,
+          "zscore": 1.1,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 32.0,
+          "variacao_pct": -49.21,
+          "zscore": 0.271,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 39.0,
+          "variacao_pct": 21.88,
+          "zscore": 0.458,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 20.0,
+          "variacao_pct": -48.72,
+          "zscore": -0.049,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 13.0,
+          "variacao_pct": -35.0,
+          "zscore": -0.237,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 13.0,
+          "variacao_pct": 0.0,
+          "zscore": -0.237,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": -100.0,
+          "zscore": -0.584,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 3.0,
+          "variacao_pct": null,
+          "zscore": -0.504,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": -100.0,
+          "zscore": -0.584,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 4.0,
+          "variacao_pct": null,
+          "zscore": -0.477,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": -100.0,
+          "zscore": -0.584,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 11.0,
+          "variacao_pct": null,
+          "zscore": -0.29,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 44.0,
+          "variacao_pct": 300.0,
+          "zscore": 0.592,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 1.0,
+          "variacao_pct": -97.73,
+          "zscore": -0.557,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 21.85,
+      "desvio_padrao": 37.42,
+      "total_periodo": 437.0,
+      "tendencia": "declínio",
+      "slope_mensal": -2.15,
+      "ultimo_valor": 1.0
+    },
+    "Compostagem": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 97612.0,
+          "variacao_pct": null,
+          "zscore": 2.216,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 81754.0,
+          "variacao_pct": -16.25,
+          "zscore": 0.245,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 80441.0,
+          "variacao_pct": -1.61,
+          "zscore": 0.082,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 79240.0,
+          "variacao_pct": -1.49,
+          "zscore": -0.068,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 80376.0,
+          "variacao_pct": 1.43,
+          "zscore": 0.074,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 83247.0,
+          "variacao_pct": 3.57,
+          "zscore": 0.43,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 81947.0,
+          "variacao_pct": -1.56,
+          "zscore": 0.269,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 78086.0,
+          "variacao_pct": -4.71,
+          "zscore": -0.211,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 81117.0,
+          "variacao_pct": 3.88,
+          "zscore": 0.166,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 82031.0,
+          "variacao_pct": 1.13,
+          "zscore": 0.279,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 72071.0,
+          "variacao_pct": -12.14,
+          "zscore": -0.959,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 81369.0,
+          "variacao_pct": 12.9,
+          "zscore": 0.197,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 69671.0,
+          "variacao_pct": -14.38,
+          "zscore": -1.257,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 80368.0,
+          "variacao_pct": 15.35,
+          "zscore": 0.073,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 91957.0,
+          "variacao_pct": 14.42,
+          "zscore": 1.513,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 81595.0,
+          "variacao_pct": -11.27,
+          "zscore": 0.225,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 58056.0,
+          "variacao_pct": -28.85,
+          "zscore": -2.701,
+          "anomaly_flag": true
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 80100.0,
+          "variacao_pct": 37.97,
+          "zscore": 0.039,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 83658.0,
+          "variacao_pct": 4.44,
+          "zscore": 0.481,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 70997.0,
+          "variacao_pct": -15.13,
+          "zscore": -1.092,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 79784.65,
+      "desvio_padrao": 8044.87,
+      "total_periodo": 1595693.0,
+      "tendencia": "estável",
+      "slope_mensal": -544.63,
+      "ultimo_valor": 70997.0
+    },
+    "Coprocessamento": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 8629.0,
+          "variacao_pct": null,
+          "zscore": 0.025,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 8727.0,
+          "variacao_pct": 1.14,
+          "zscore": 0.097,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 9339.0,
+          "variacao_pct": 7.01,
+          "zscore": 0.549,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 10707.0,
+          "variacao_pct": 14.65,
+          "zscore": 1.558,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 9244.0,
+          "variacao_pct": -13.66,
+          "zscore": 0.479,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 9184.0,
+          "variacao_pct": -0.65,
+          "zscore": 0.434,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 11506.0,
+          "variacao_pct": 25.28,
+          "zscore": 2.148,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 9628.0,
+          "variacao_pct": -16.32,
+          "zscore": 0.762,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 9015.0,
+          "variacao_pct": -6.37,
+          "zscore": 0.31,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 8254.0,
+          "variacao_pct": -8.44,
+          "zscore": -0.252,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 7382.0,
+          "variacao_pct": -10.56,
+          "zscore": -0.895,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 6344.0,
+          "variacao_pct": -14.06,
+          "zscore": -1.661,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 5608.0,
+          "variacao_pct": -11.6,
+          "zscore": -2.204,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 7026.0,
+          "variacao_pct": 25.29,
+          "zscore": -1.158,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 8322.0,
+          "variacao_pct": 18.45,
+          "zscore": -0.202,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 8996.0,
+          "variacao_pct": 8.1,
+          "zscore": 0.296,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 8760.0,
+          "variacao_pct": -2.62,
+          "zscore": 0.122,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 8718.0,
+          "variacao_pct": -0.48,
+          "zscore": 0.091,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 8903.0,
+          "variacao_pct": 2.12,
+          "zscore": 0.227,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 7612.0,
+          "variacao_pct": -14.5,
+          "zscore": -0.725,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 8595.2,
+      "desvio_padrao": 1355.22,
+      "total_periodo": 171904.0,
+      "tendencia": "declínio",
+      "slope_mensal": -91.57,
+      "ultimo_valor": 7612.0
+    },
+    "Desativação da Fosfina": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.263,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.263,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.263,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.263,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.263,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.263,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.263,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.263,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.263,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 1.0,
+          "variacao_pct": null,
+          "zscore": -0.177,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": -100.0,
+          "zscore": -0.263,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.263,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 1.0,
+          "variacao_pct": null,
+          "zscore": -0.177,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 52.0,
+          "variacao_pct": 5100.0,
+          "zscore": 4.22,
+          "anomaly_flag": true
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": -100.0,
+          "zscore": -0.263,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.263,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.263,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.263,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 1.0,
+          "variacao_pct": null,
+          "zscore": -0.177,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 6.0,
+          "variacao_pct": 500.0,
+          "zscore": 0.254,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 3.05,
+      "desvio_padrao": 11.6,
+      "total_periodo": 61.0,
+      "tendencia": "crescimento",
+      "slope_mensal": 0.38,
+      "ultimo_valor": 6.0
+    },
+    "Descontaminação de Lâmpadas": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 108.0,
+          "variacao_pct": null,
+          "zscore": 0.448,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 105.0,
+          "variacao_pct": -2.78,
+          "zscore": 0.382,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 122.0,
+          "variacao_pct": 16.19,
+          "zscore": 0.757,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 86.0,
+          "variacao_pct": -29.51,
+          "zscore": -0.036,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 114.0,
+          "variacao_pct": 32.56,
+          "zscore": 0.581,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 113.0,
+          "variacao_pct": -0.88,
+          "zscore": 0.559,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 99.0,
+          "variacao_pct": -12.39,
+          "zscore": 0.25,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 120.0,
+          "variacao_pct": 21.21,
+          "zscore": 0.713,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 220.0,
+          "variacao_pct": 83.33,
+          "zscore": 2.917,
+          "anomaly_flag": true
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 120.0,
+          "variacao_pct": -45.45,
+          "zscore": 0.713,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 53.0,
+          "variacao_pct": -55.83,
+          "zscore": -0.764,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 66.0,
+          "variacao_pct": 24.53,
+          "zscore": -0.477,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 41.0,
+          "variacao_pct": -37.88,
+          "zscore": -1.028,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 38.0,
+          "variacao_pct": -7.32,
+          "zscore": -1.094,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 91.0,
+          "variacao_pct": 139.47,
+          "zscore": 0.074,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 69.0,
+          "variacao_pct": -24.18,
+          "zscore": -0.411,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 5.0,
+          "variacao_pct": -92.75,
+          "zscore": -1.821,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 59.0,
+          "variacao_pct": 1080.0,
+          "zscore": -0.631,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 78.0,
+          "variacao_pct": 32.2,
+          "zscore": -0.213,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 46.0,
+          "variacao_pct": -41.03,
+          "zscore": -0.918,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 87.65,
+      "desvio_padrao": 45.38,
+      "total_periodo": 1753.0,
+      "tendencia": "declínio",
+      "slope_mensal": -4.27,
+      "ultimo_valor": 46.0
+    },
+    "Dessorção Térmica": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.485,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.485,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.485,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 1.0,
+          "variacao_pct": null,
+          "zscore": -0.439,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 1.0,
+          "variacao_pct": 0.0,
+          "zscore": -0.439,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": -100.0,
+          "zscore": -0.485,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.485,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.485,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.485,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 6.0,
+          "variacao_pct": null,
+          "zscore": -0.208,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": -100.0,
+          "zscore": -0.485,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.485,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.485,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.485,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.485,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.485,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 43.0,
+          "variacao_pct": null,
+          "zscore": 1.501,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 64.0,
+          "variacao_pct": 48.84,
+          "zscore": 2.472,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 65.0,
+          "variacao_pct": 1.56,
+          "zscore": 2.518,
+          "anomaly_flag": true
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 30.0,
+          "variacao_pct": -53.85,
+          "zscore": 0.901,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 10.5,
+      "desvio_padrao": 21.65,
+      "total_periodo": 210.0,
+      "tendencia": "crescimento",
+      "slope_mensal": 2.38,
+      "ultimo_valor": 30.0
+    },
+    "Gaseificação": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": 0.0,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": 0.0,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": 0.0,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": 0.0,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": 0.0,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": 0.0,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": 0.0,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": 0.0,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": 0.0,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": 0.0,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": 0.0,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": 0.0,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": 0.0,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": 0.0,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": 0.0,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": 0.0,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": 0.0,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": 0.0,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": 0.0,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": 0.0,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 0.0,
+      "desvio_padrao": 0.0,
+      "total_periodo": 0.0,
+      "tendencia": "estável",
+      "slope_mensal": 0.0,
+      "ultimo_valor": 0.0
+    },
+    "Incineração": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 10361.0,
+          "variacao_pct": null,
+          "zscore": -0.879,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 8488.0,
+          "variacao_pct": -18.08,
+          "zscore": -1.906,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 9379.0,
+          "variacao_pct": 10.5,
+          "zscore": -1.417,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 10717.0,
+          "variacao_pct": 14.27,
+          "zscore": -0.684,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 10598.0,
+          "variacao_pct": -1.11,
+          "zscore": -0.749,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 12255.0,
+          "variacao_pct": 15.64,
+          "zscore": 0.159,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 11870.0,
+          "variacao_pct": -3.14,
+          "zscore": -0.052,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 11776.0,
+          "variacao_pct": -0.79,
+          "zscore": -0.104,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 11360.0,
+          "variacao_pct": -3.53,
+          "zscore": -0.332,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 10780.0,
+          "variacao_pct": -5.11,
+          "zscore": -0.65,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 10763.0,
+          "variacao_pct": -0.16,
+          "zscore": -0.659,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 10993.0,
+          "variacao_pct": 2.14,
+          "zscore": -0.533,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 12296.0,
+          "variacao_pct": 11.85,
+          "zscore": 0.181,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 13055.0,
+          "variacao_pct": 6.17,
+          "zscore": 0.597,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 14885.0,
+          "variacao_pct": 14.02,
+          "zscore": 1.6,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 15647.0,
+          "variacao_pct": 5.12,
+          "zscore": 2.017,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 13148.0,
+          "variacao_pct": -15.97,
+          "zscore": 0.648,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 14375.0,
+          "variacao_pct": 9.33,
+          "zscore": 1.32,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 13552.0,
+          "variacao_pct": -5.73,
+          "zscore": 0.869,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 13013.0,
+          "variacao_pct": -3.98,
+          "zscore": 0.574,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 11965.55,
+      "desvio_padrao": 1824.83,
+      "total_periodo": 239311.0,
+      "tendencia": "crescimento",
+      "slope_mensal": 249.63,
+      "ultimo_valor": 13013.0
+    },
+    "Microondas": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.405,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 10.0,
+          "variacao_pct": null,
+          "zscore": 1.784,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 18.0,
+          "variacao_pct": 80.0,
+          "zscore": 3.535,
+          "anomaly_flag": true
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 4.0,
+          "variacao_pct": -77.78,
+          "zscore": 0.471,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": -100.0,
+          "zscore": -0.405,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.405,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.405,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.405,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.405,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.405,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.405,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.405,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.405,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 5.0,
+          "variacao_pct": null,
+          "zscore": 0.69,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": -100.0,
+          "zscore": -0.405,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.405,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.405,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.405,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.405,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.405,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 1.85,
+      "desvio_padrao": 4.57,
+      "total_periodo": 37.0,
+      "tendencia": "declínio",
+      "slope_mensal": -0.34,
+      "ultimo_valor": 0.0
+    },
+    "Pesquisa/Estudos": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 273.0,
+          "variacao_pct": null,
+          "zscore": 0.496,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 16.0,
+          "variacao_pct": -94.14,
+          "zscore": -0.451,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 53.0,
+          "variacao_pct": 231.25,
+          "zscore": -0.314,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": -100.0,
+          "zscore": -0.51,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.51,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.51,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.51,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.51,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.51,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 83.0,
+          "variacao_pct": null,
+          "zscore": -0.204,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 460.0,
+          "variacao_pct": 454.22,
+          "zscore": 1.185,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 330.0,
+          "variacao_pct": -28.26,
+          "zscore": 0.706,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 1137.0,
+          "variacao_pct": 244.55,
+          "zscore": 3.679,
+          "anomaly_flag": true
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 147.0,
+          "variacao_pct": -87.07,
+          "zscore": 0.032,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 2.0,
+          "variacao_pct": -98.64,
+          "zscore": -0.502,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 252.0,
+          "variacao_pct": 12500.0,
+          "zscore": 0.419,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": -100.0,
+          "zscore": -0.51,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.51,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 14.0,
+          "variacao_pct": null,
+          "zscore": -0.458,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": -100.0,
+          "zscore": -0.51,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 138.35,
+      "desvio_padrao": 271.47,
+      "total_periodo": 2767.0,
+      "tendencia": "crescimento",
+      "slope_mensal": 3.65,
+      "ultimo_valor": 0.0
+    },
+    "Pirólise": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 96.0,
+          "variacao_pct": null,
+          "zscore": -0.64,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 217.0,
+          "variacao_pct": 126.04,
+          "zscore": 0.267,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 147.0,
+          "variacao_pct": -32.26,
+          "zscore": -0.258,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 162.0,
+          "variacao_pct": 10.2,
+          "zscore": -0.145,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 501.0,
+          "variacao_pct": 209.26,
+          "zscore": 2.393,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 290.0,
+          "variacao_pct": -42.12,
+          "zscore": 0.813,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 315.0,
+          "variacao_pct": 8.62,
+          "zscore": 1.001,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 383.0,
+          "variacao_pct": 21.59,
+          "zscore": 1.51,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 277.0,
+          "variacao_pct": -27.68,
+          "zscore": 0.716,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 23.0,
+          "variacao_pct": -91.7,
+          "zscore": -1.186,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 247.0,
+          "variacao_pct": 973.91,
+          "zscore": 0.491,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 216.0,
+          "variacao_pct": -12.55,
+          "zscore": 0.259,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 230.0,
+          "variacao_pct": 6.48,
+          "zscore": 0.364,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 233.0,
+          "variacao_pct": 1.3,
+          "zscore": 0.386,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 112.0,
+          "variacao_pct": -51.93,
+          "zscore": -0.52,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 52.0,
+          "variacao_pct": -53.57,
+          "zscore": -0.969,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 32.0,
+          "variacao_pct": -38.46,
+          "zscore": -1.119,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 38.0,
+          "variacao_pct": 18.75,
+          "zscore": -1.074,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 40.0,
+          "variacao_pct": 5.26,
+          "zscore": -1.059,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 17.0,
+          "variacao_pct": -57.5,
+          "zscore": -1.231,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 181.4,
+      "desvio_padrao": 133.53,
+      "total_periodo": 3628.0,
+      "tendencia": "declínio",
+      "slope_mensal": -11.78,
+      "ultimo_valor": 17.0
+    },
+    "Reciclagem": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 284749.0,
+          "variacao_pct": null,
+          "zscore": -0.523,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 278192.0,
+          "variacao_pct": -2.3,
+          "zscore": -0.633,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 316958.0,
+          "variacao_pct": 13.93,
+          "zscore": 0.016,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 437932.0,
+          "variacao_pct": 38.17,
+          "zscore": 2.043,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 305291.0,
+          "variacao_pct": -30.29,
+          "zscore": -0.179,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 275835.0,
+          "variacao_pct": -9.65,
+          "zscore": -0.673,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 371422.0,
+          "variacao_pct": 34.65,
+          "zscore": 0.929,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 300277.0,
+          "variacao_pct": -19.15,
+          "zscore": -0.263,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 339644.0,
+          "variacao_pct": 13.11,
+          "zscore": 0.396,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 304765.0,
+          "variacao_pct": -10.27,
+          "zscore": -0.188,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 270469.0,
+          "variacao_pct": -11.25,
+          "zscore": -0.763,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 279212.0,
+          "variacao_pct": 3.23,
+          "zscore": -0.616,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 266108.0,
+          "variacao_pct": -4.69,
+          "zscore": -0.836,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 267701.0,
+          "variacao_pct": 0.6,
+          "zscore": -0.809,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 348670.0,
+          "variacao_pct": 30.25,
+          "zscore": 0.548,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 293129.0,
+          "variacao_pct": -15.93,
+          "zscore": -0.383,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 225634.0,
+          "variacao_pct": -23.03,
+          "zscore": -1.514,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 349355.0,
+          "variacao_pct": 54.83,
+          "zscore": 0.559,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 329171.0,
+          "variacao_pct": -5.78,
+          "zscore": 0.221,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 475262.0,
+          "variacao_pct": 44.38,
+          "zscore": 2.669,
+          "anomaly_flag": true
+        }
+      ],
+      "media_toneladas": 315988.8,
+      "desvio_padrao": 59675.29,
+      "total_periodo": 6319776.0,
+      "tendencia": "estável",
+      "slope_mensal": 1219.34,
+      "ultimo_valor": 475262.0
+    },
+    "Recuperação energética": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 75922.0,
+          "variacao_pct": null,
+          "zscore": -0.686,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 75309.0,
+          "variacao_pct": -0.81,
+          "zscore": -0.743,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 80802.0,
+          "variacao_pct": 7.29,
+          "zscore": -0.237,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 85545.0,
+          "variacao_pct": 5.87,
+          "zscore": 0.2,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 83681.0,
+          "variacao_pct": -2.18,
+          "zscore": 0.028,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 90402.0,
+          "variacao_pct": 8.03,
+          "zscore": 0.647,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 96480.0,
+          "variacao_pct": 6.72,
+          "zscore": 1.207,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 89791.0,
+          "variacao_pct": -6.93,
+          "zscore": 0.591,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 90767.0,
+          "variacao_pct": 1.09,
+          "zscore": 0.681,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 88716.0,
+          "variacao_pct": -2.26,
+          "zscore": 0.492,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 80007.0,
+          "variacao_pct": -9.82,
+          "zscore": -0.31,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 77318.0,
+          "variacao_pct": -3.36,
+          "zscore": -0.558,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 82653.0,
+          "variacao_pct": 6.9,
+          "zscore": -0.066,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 64453.0,
+          "variacao_pct": -22.02,
+          "zscore": -1.742,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 100260.0,
+          "variacao_pct": 55.56,
+          "zscore": 1.555,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 89970.0,
+          "variacao_pct": -10.26,
+          "zscore": 0.607,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 66219.0,
+          "variacao_pct": -26.4,
+          "zscore": -1.58,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 94301.0,
+          "variacao_pct": 42.41,
+          "zscore": 1.006,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 93933.0,
+          "variacao_pct": -0.39,
+          "zscore": 0.972,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 60942.0,
+          "variacao_pct": -35.12,
+          "zscore": -2.065,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 83373.55,
+      "desvio_padrao": 10860.58,
+      "total_periodo": 1667471.0,
+      "tendencia": "estável",
+      "slope_mensal": -126.16,
+      "ultimo_valor": 60942.0
+    },
+    "Rerrefino": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 1849.0,
+          "variacao_pct": null,
+          "zscore": 1.03,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 1520.0,
+          "variacao_pct": -17.79,
+          "zscore": 0.43,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 1517.0,
+          "variacao_pct": -0.2,
+          "zscore": 0.424,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 1549.0,
+          "variacao_pct": 2.11,
+          "zscore": 0.482,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 1484.0,
+          "variacao_pct": -4.2,
+          "zscore": 0.364,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 1542.0,
+          "variacao_pct": 3.91,
+          "zscore": 0.47,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 1829.0,
+          "variacao_pct": 18.61,
+          "zscore": 0.993,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 1694.0,
+          "variacao_pct": -7.38,
+          "zscore": 0.747,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 1757.0,
+          "variacao_pct": 3.72,
+          "zscore": 0.862,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 1481.0,
+          "variacao_pct": -15.71,
+          "zscore": 0.358,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 1668.0,
+          "variacao_pct": 12.63,
+          "zscore": 0.7,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 1765.0,
+          "variacao_pct": 5.82,
+          "zscore": 0.877,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 1905.0,
+          "variacao_pct": 7.93,
+          "zscore": 1.132,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 825.0,
+          "variacao_pct": -56.69,
+          "zscore": -0.838,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 782.0,
+          "variacao_pct": -5.21,
+          "zscore": -0.917,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 653.0,
+          "variacao_pct": -16.5,
+          "zscore": -1.152,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 322.0,
+          "variacao_pct": -50.69,
+          "zscore": -1.756,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 523.0,
+          "variacao_pct": 62.42,
+          "zscore": -1.389,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 679.0,
+          "variacao_pct": 29.83,
+          "zscore": -1.105,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 347.0,
+          "variacao_pct": -48.9,
+          "zscore": -1.711,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 1284.55,
+      "desvio_padrao": 548.08,
+      "total_periodo": 25691.0,
+      "tendencia": "declínio",
+      "slope_mensal": -71.76,
+      "ultimo_valor": 347.0
+    },
+    "Reutilização": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 38130.0,
+          "variacao_pct": null,
+          "zscore": -0.593,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 48565.0,
+          "variacao_pct": 27.37,
+          "zscore": -0.124,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 60306.0,
+          "variacao_pct": 24.18,
+          "zscore": 0.403,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 40695.0,
+          "variacao_pct": -32.52,
+          "zscore": -0.478,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 40916.0,
+          "variacao_pct": 0.54,
+          "zscore": -0.468,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 39386.0,
+          "variacao_pct": -3.74,
+          "zscore": -0.537,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 57445.0,
+          "variacao_pct": 45.85,
+          "zscore": 0.275,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 34397.0,
+          "variacao_pct": -40.12,
+          "zscore": -0.761,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 38522.0,
+          "variacao_pct": 11.99,
+          "zscore": -0.576,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 31456.0,
+          "variacao_pct": -18.34,
+          "zscore": -0.893,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 40787.0,
+          "variacao_pct": 29.66,
+          "zscore": -0.474,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 29883.0,
+          "variacao_pct": -26.73,
+          "zscore": -0.964,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 32742.0,
+          "variacao_pct": 9.57,
+          "zscore": -0.835,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 57559.0,
+          "variacao_pct": 75.8,
+          "zscore": 0.28,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 115103.0,
+          "variacao_pct": 99.97,
+          "zscore": 2.865,
+          "anomaly_flag": true
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 70439.0,
+          "variacao_pct": -38.8,
+          "zscore": 0.859,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 31066.0,
+          "variacao_pct": -55.9,
+          "zscore": -0.911,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 84110.0,
+          "variacao_pct": 170.75,
+          "zscore": 1.473,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 83403.0,
+          "variacao_pct": -0.84,
+          "zscore": 1.441,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 51704.0,
+          "variacao_pct": -38.01,
+          "zscore": 0.017,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 51330.7,
+      "desvio_padrao": 22256.14,
+      "total_periodo": 1026614.0,
+      "tendencia": "crescimento",
+      "slope_mensal": 1552.01,
+      "ultimo_valor": 51704.0
+    },
+    "Transbordo de RSU": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 6369.0,
+          "variacao_pct": null,
+          "zscore": 2.662,
+          "anomaly_flag": true
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 5917.0,
+          "variacao_pct": -7.1,
+          "zscore": 2.346,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 1522.0,
+          "variacao_pct": -74.28,
+          "zscore": -0.728,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 1830.0,
+          "variacao_pct": 20.24,
+          "zscore": -0.512,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 1821.0,
+          "variacao_pct": -0.49,
+          "zscore": -0.518,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 1452.0,
+          "variacao_pct": -20.26,
+          "zscore": -0.776,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 1514.0,
+          "variacao_pct": 4.27,
+          "zscore": -0.733,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 1357.0,
+          "variacao_pct": -10.37,
+          "zscore": -0.843,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 1827.0,
+          "variacao_pct": 34.64,
+          "zscore": -0.514,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 2201.0,
+          "variacao_pct": 20.47,
+          "zscore": -0.253,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 1694.0,
+          "variacao_pct": -23.03,
+          "zscore": -0.607,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 2061.0,
+          "variacao_pct": 21.66,
+          "zscore": -0.351,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 2833.0,
+          "variacao_pct": 37.46,
+          "zscore": 0.189,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 3117.0,
+          "variacao_pct": 10.02,
+          "zscore": 0.388,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 3266.0,
+          "variacao_pct": 4.78,
+          "zscore": 0.492,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 3671.0,
+          "variacao_pct": 12.4,
+          "zscore": 0.775,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 1247.0,
+          "variacao_pct": -66.03,
+          "zscore": -0.92,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 3254.0,
+          "variacao_pct": 160.95,
+          "zscore": 0.484,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 2791.0,
+          "variacao_pct": -14.23,
+          "zscore": 0.16,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 1505.0,
+          "variacao_pct": -46.08,
+          "zscore": -0.739,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 2562.45,
+      "desvio_padrao": 1430.09,
+      "total_periodo": 51249.0,
+      "tendencia": "declínio",
+      "slope_mensal": -53.9,
+      "ultimo_valor": 1505.0
+    },
+    "Tratamento Térmico": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 700.0,
+          "variacao_pct": null,
+          "zscore": 0.085,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 472.0,
+          "variacao_pct": -32.57,
+          "zscore": -1.071,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 824.0,
+          "variacao_pct": 74.58,
+          "zscore": 0.713,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 747.0,
+          "variacao_pct": -9.34,
+          "zscore": 0.323,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 592.0,
+          "variacao_pct": -20.75,
+          "zscore": -0.462,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 524.0,
+          "variacao_pct": -11.49,
+          "zscore": -0.807,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 551.0,
+          "variacao_pct": 5.15,
+          "zscore": -0.67,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 783.0,
+          "variacao_pct": 42.11,
+          "zscore": 0.506,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 878.0,
+          "variacao_pct": 12.13,
+          "zscore": 0.987,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 702.0,
+          "variacao_pct": -20.05,
+          "zscore": 0.095,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 879.0,
+          "variacao_pct": 25.21,
+          "zscore": 0.992,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 541.0,
+          "variacao_pct": -38.45,
+          "zscore": -0.721,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 713.0,
+          "variacao_pct": 31.79,
+          "zscore": 0.151,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 795.0,
+          "variacao_pct": 11.5,
+          "zscore": 0.566,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 1109.0,
+          "variacao_pct": 39.5,
+          "zscore": 2.158,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 990.0,
+          "variacao_pct": -10.73,
+          "zscore": 1.555,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 483.0,
+          "variacao_pct": -51.21,
+          "zscore": -1.015,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 500.0,
+          "variacao_pct": 3.52,
+          "zscore": -0.929,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 312.0,
+          "variacao_pct": -37.6,
+          "zscore": -1.881,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 570.0,
+          "variacao_pct": 82.69,
+          "zscore": -0.574,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 683.25,
+      "desvio_padrao": 197.32,
+      "total_periodo": 13665.0,
+      "tendencia": "estável",
+      "slope_mensal": -2.49,
+      "ultimo_valor": 570.0
+    },
+    "Tratamento de Efluentes": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 89832.0,
+          "variacao_pct": null,
+          "zscore": 1.166,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 67968.0,
+          "variacao_pct": -24.34,
+          "zscore": -0.128,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 61876.0,
+          "variacao_pct": -8.96,
+          "zscore": -0.489,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 59636.0,
+          "variacao_pct": -3.62,
+          "zscore": -0.621,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 77672.0,
+          "variacao_pct": 30.24,
+          "zscore": 0.446,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 78200.0,
+          "variacao_pct": 0.68,
+          "zscore": 0.477,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 109695.0,
+          "variacao_pct": 40.27,
+          "zscore": 2.341,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 94309.0,
+          "variacao_pct": -14.03,
+          "zscore": 1.43,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 92814.0,
+          "variacao_pct": -1.59,
+          "zscore": 1.342,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 86132.0,
+          "variacao_pct": -7.2,
+          "zscore": 0.947,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 60060.0,
+          "variacao_pct": -30.27,
+          "zscore": -0.596,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 65010.0,
+          "variacao_pct": 8.24,
+          "zscore": -0.303,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 63050.0,
+          "variacao_pct": -3.01,
+          "zscore": -0.419,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 51568.0,
+          "variacao_pct": -18.21,
+          "zscore": -1.099,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 66316.0,
+          "variacao_pct": 28.6,
+          "zscore": -0.226,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 58575.0,
+          "variacao_pct": -11.67,
+          "zscore": -0.684,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 43519.0,
+          "variacao_pct": -25.7,
+          "zscore": -1.575,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 58171.0,
+          "variacao_pct": 33.67,
+          "zscore": -0.708,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 64110.0,
+          "variacao_pct": 10.21,
+          "zscore": -0.356,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 54160.0,
+          "variacao_pct": -15.52,
+          "zscore": -0.945,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 70133.65,
+      "desvio_padrao": 16899.93,
+      "total_periodo": 1402673.0,
+      "tendencia": "declínio",
+      "slope_mensal": -1502.36,
+      "ultimo_valor": 54160.0
+    },
+    "Uso Agrícola": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 48833.0,
+          "variacao_pct": null,
+          "zscore": 0.961,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 42014.0,
+          "variacao_pct": -13.96,
+          "zscore": 0.08,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 48544.0,
+          "variacao_pct": 15.54,
+          "zscore": 0.924,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 47915.0,
+          "variacao_pct": -1.3,
+          "zscore": 0.843,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 45987.0,
+          "variacao_pct": -4.02,
+          "zscore": 0.593,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 38294.0,
+          "variacao_pct": -16.73,
+          "zscore": -0.401,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 47722.0,
+          "variacao_pct": 24.62,
+          "zscore": 0.818,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 37603.0,
+          "variacao_pct": -21.2,
+          "zscore": -0.49,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 41664.0,
+          "variacao_pct": 10.8,
+          "zscore": 0.035,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 33520.0,
+          "variacao_pct": -19.55,
+          "zscore": -1.018,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 37666.0,
+          "variacao_pct": 12.37,
+          "zscore": -0.482,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 42155.0,
+          "variacao_pct": 11.92,
+          "zscore": 0.098,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 45949.0,
+          "variacao_pct": 9.0,
+          "zscore": 0.589,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 41929.0,
+          "variacao_pct": -8.75,
+          "zscore": 0.069,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 54745.0,
+          "variacao_pct": 30.57,
+          "zscore": 1.726,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 43041.0,
+          "variacao_pct": -21.38,
+          "zscore": 0.213,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 26437.0,
+          "variacao_pct": -38.58,
+          "zscore": -1.934,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 43624.0,
+          "variacao_pct": 65.01,
+          "zscore": 0.288,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 38570.0,
+          "variacao_pct": -11.59,
+          "zscore": -0.365,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 21721.0,
+          "variacao_pct": -43.68,
+          "zscore": -2.544,
+          "anomaly_flag": true
+        }
+      ],
+      "media_toneladas": 41396.65,
+      "desvio_padrao": 7734.82,
+      "total_periodo": 827933.0,
+      "tendencia": "declínio",
+      "slope_mensal": -604.69,
+      "ultimo_valor": 21721.0
+    },
+    "Uso Alimentação Animal": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 13844.0,
+          "variacao_pct": null,
+          "zscore": 0.631,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 21003.0,
+          "variacao_pct": 51.71,
+          "zscore": 2.336,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 14570.0,
+          "variacao_pct": -30.63,
+          "zscore": 0.803,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 13059.0,
+          "variacao_pct": -10.37,
+          "zscore": 0.444,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 10211.0,
+          "variacao_pct": -21.81,
+          "zscore": -0.235,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 8783.0,
+          "variacao_pct": -13.98,
+          "zscore": -0.575,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 8491.0,
+          "variacao_pct": -3.32,
+          "zscore": -0.644,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 8549.0,
+          "variacao_pct": 0.68,
+          "zscore": -0.631,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 8878.0,
+          "variacao_pct": 3.85,
+          "zscore": -0.552,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 9628.0,
+          "variacao_pct": 8.45,
+          "zscore": -0.374,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 8909.0,
+          "variacao_pct": -7.47,
+          "zscore": -0.545,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 8676.0,
+          "variacao_pct": -2.62,
+          "zscore": -0.6,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 8683.0,
+          "variacao_pct": 0.08,
+          "zscore": -0.599,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 17904.0,
+          "variacao_pct": 106.2,
+          "zscore": 1.598,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 19839.0,
+          "variacao_pct": 10.81,
+          "zscore": 2.058,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 10330.0,
+          "variacao_pct": -47.93,
+          "zscore": -0.206,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 5898.0,
+          "variacao_pct": -42.9,
+          "zscore": -1.262,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 9537.0,
+          "variacao_pct": 61.7,
+          "zscore": -0.395,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 10151.0,
+          "variacao_pct": 6.44,
+          "zscore": -0.249,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 6989.0,
+          "variacao_pct": -31.15,
+          "zscore": -1.002,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 11196.6,
+      "desvio_padrao": 4198.67,
+      "total_periodo": 223932.0,
+      "tendencia": "declínio",
+      "slope_mensal": -238.55,
+      "ultimo_valor": 6989.0
+    }
+  },
+  "gerado_em": "2026-09-17T01:49:04.898736+00:00",
+  "schema_version": "mtr_gold_v0.1"
+}

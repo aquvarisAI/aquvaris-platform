@@ -1,0 +1,412 @@
+"""
+Aquvaris MTR — Parser Silver
+EPIC 04 — MTR-025 a MTR-031
+Version: 0.1
+Date: 2026-09-16
+
+Extrai dados estruturados dos Relatórios Gerenciais Mensais FEPAM
+e produz registros Silver com evidência de proveniência completa.
+
+Uso:
+    python mtr_parser_silver.py                        # processa todos os Bronze
+    python mtr_parser_silver.py --mes 2026-08          # só agosto/2026
+    python mtr_parser_silver.py --dry-run              # mostra sem salvar
+"""
+
+import re
+import json
+import hashlib
+import argparse
+import logging
+from pathlib import Path
+from datetime import datetime, timezone
+
+import pdfplumber
+
+# ── Configuração ──────────────────────────────────────────────────────────────
+
+BASE_DIR    = Path(__file__).parent
+BRONZE_DIR  = BASE_DIR / "data" / "mtr" / "bronze"
+SILVER_DIR  = BASE_DIR / "data" / "mtr" / "silver"
+MANIFEST    = BRONZE_DIR / "_manifest.json"
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S"
+)
+log = logging.getLogger("mtr.silver")
+
+# ── Meses em português → número ───────────────────────────────────────────────
+MESES = {
+    "janeiro":1,"fevereiro":2,"março":3,"abril":4,
+    "maio":5,"junho":6,"julho":7,"agosto":8,
+    "setembro":9,"outubro":10,"novembro":11,"dezembro":12
+}
+
+# ── Funções de parsing ────────────────────────────────────────────────────────
+
+def limpar_numero(texto: str) -> float | None:
+    """Converte string de número brasileiro para float. Ex: '162.567' → 162567.0"""
+    if not texto:
+        return None
+    # Remove espaços e caracteres não numéricos exceto . e ,
+    t = texto.strip().replace(" ", "")
+    # Formato brasileiro: ponto como milhar, vírgula como decimal
+    # Ex: "1.234,56" → 1234.56
+    # Ex: "162.567" → 162567 (sem vírgula = só milhar)
+    if "," in t:
+        t = t.replace(".", "").replace(",", ".")
+    else:
+        # Verifica se o ponto é milhar (3 dígitos após) ou decimal
+        partes = t.split(".")
+        if len(partes) > 1 and len(partes[-1]) == 3:
+            t = t.replace(".", "")  # milhar
+        # senão deixa como está (decimal com ponto)
+    try:
+        return float(t)
+    except ValueError:
+        return None
+
+
+def extrair_periodo_do_texto(texto: str) -> tuple[str, str] | tuple[None, None]:
+    """Extrai período (mês/ano) do cabeçalho do relatório."""
+    padrao = r"Relatório Gerencial Mensal[^\n]*-\s*(\w+)/(\d{4})"
+    m = re.search(padrao, texto, re.IGNORECASE)
+    if m:
+        mes_str = m.group(1).lower()
+        ano = m.group(2)
+        mes_num = MESES.get(mes_str)
+        if mes_num:
+            periodo = f"{ano}-{mes_num:02d}"
+            return periodo, f"{m.group(1)}/{ano}"
+    return None, None
+
+
+def extrair_usuarios(texto: str, periodo_ref: str) -> list[dict]:
+    """
+    Extrai usuários cadastrados do sistema MTR.
+    Estrutura: Geradores X / Transportadores Y / Destinadores Z / etc.
+    """
+    registros = []
+    padroes = [
+        ("Geradores",              r"Geradores\s+([\d.,]+)"),
+        ("Transportadores",        r"Transportadores\s+([\d.,]+)"),
+        ("Destinadores",           r"Destinadores\s+([\d.,]+)"),
+        ("Armazenadores Temp.",    r"Armazenadores Temporários\s+([\d.,]+)"),
+        ("Total Geral",            r"Total Geral[:\s]+([\d.,]+)"),
+    ]
+    for label, padrao in padroes:
+        m = re.search(padrao, texto)
+        if m:
+            valor = limpar_numero(m.group(1))
+            if valor is not None:
+                registros.append({
+                    "periodo":         periodo_ref,
+                    "categoria":       "usuarios_cadastrados",
+                    "perfil":          label,
+                    "quantidade":      int(valor),
+                    "unidade":         "cadastros",
+                    "fonte_campo":     "Usuários Cadastrados no Sistema MTR Online",
+                    "metodo_extracao": "regex",
+                    "confianca":       "alta",
+                })
+    return registros
+
+
+def extrair_mtrs(texto: str, periodo_ref: str) -> list[dict]:
+    """
+    Extrai número de MTRs emitidos e recebidos por mês (últimos 3 meses).
+    """
+    registros = []
+    # Padrão: Mês/ano NNNN NNNN (emitidos e recebidos na mesma linha)
+    padrao = r"(\w+/\d{4})\s+([\d.,]+)\s+([\d.,]+)"
+    for m in re.finditer(padrao, texto):
+        mes_ano = m.group(1)
+        emitidos = limpar_numero(m.group(2))
+        recebidos = limpar_numero(m.group(3))
+        if emitidos and recebidos and emitidos > 1000:  # filtro básico
+            registros.append({
+                "periodo":         periodo_ref,
+                "periodo_referencia": mes_ano,
+                "categoria":       "mtrs_emitidos_recebidos",
+                "mtrs_emitidos":   int(emitidos),
+                "mtrs_recebidos":  int(recebidos),
+                "fonte_campo":     "Número de Manifestos - Emitidos e Recebidos",
+                "metodo_extracao": "regex",
+                "confianca":       "alta",
+            })
+    return registros
+
+
+def extrair_residuos_por_classe(texto: str, periodo_ref: str) -> list[dict]:
+    """
+    Extrai quantidade de resíduos recebidos por classe (I, IIA, IIB, Grupos A-E).
+    Dados em toneladas para os últimos 3 meses.
+    """
+    registros = []
+
+    # Extrair os 3 meses de referência do cabeçalho da tabela
+    padrao_meses = r"Quantidade de Resíduos Recebidos \(toneladas\) - por Classe\s*\n\s*(\w+/\d{4})\s+(\w+/\d{4})\s+(\w+/\d{4})"
+    m_meses = re.search(padrao_meses, texto)
+    meses_ref = []
+    if m_meses:
+        meses_ref = [m_meses.group(1), m_meses.group(2), m_meses.group(3)]
+
+    # Classes e grupos com padrão: LABEL valor1 valor2 valor3
+    padroes_classes = [
+        ("Classe I",   r"Classe I\s+([\d.,]+)\s+([\d.,]+)\s+([\d.,]+)"),
+        ("Classe IIA", r"Classe II A\s+([\d.,]+)\s+([\d.,]+)\s+([\d.,]+)"),
+        ("Classe IIB", r"Classe II B\s+([\d.,]+)\s+([\d.,]+)\s+([\d.,]+)"),
+        ("Grupo A",    r"Grupo A\s+([\d.,]+)\s+([\d.,]+)\s+([\d.,]+)"),
+        ("Grupo A1",   r"Grupo A1\s+([\d.,]+)\s+([\d.,]+)\s+([\d.,]+)"),
+        ("Grupo A2",   r"Grupo A2\s+([\d.,]+)\s+([\d.,]+)\s+([\d.,]+)"),
+        ("Grupo A3",   r"Grupo A3\s+([\d.,]+)\s+([\d.,]+)\s+([\d.,]+)"),
+        ("Grupo A4",   r"Grupo A4\s+([\d.,]+)\s+([\d.,]+)\s+([\d.,]+)"),
+        ("Grupo A5",   r"Grupo A5\s+([\d.,]+)\s+([\d.,]+)\s+([\d.,]+)"),
+        ("Grupo B",    r"Grupo B \(Classe 1\)\s+([\d.,]+)\s+([\d.,]+)\s+([\d.,]+)"),
+        ("Grupo C",    r"Grupo C\s+([\d.,]+)\s+([\d.,]+)\s+([\d.,]+)"),
+        ("Grupo E",    r"Grupo E\s+([\d.,]+)\s+([\d.,]+)\s+([\d.,]+)"),
+    ]
+
+    for label, padrao in padroes_classes:
+        m = re.search(padrao, texto)
+        if m:
+            for i in range(3):
+                valor = limpar_numero(m.group(i+1))
+                mes_ref = meses_ref[i] if i < len(meses_ref) else f"ref_{i+1}"
+                if valor is not None:
+                    registros.append({
+                        "periodo":            periodo_ref,
+                        "periodo_referencia": mes_ref,
+                        "categoria":          "residuos_por_classe",
+                        "classe":             label,
+                        "quantidade_toneladas": valor,
+                        "unidade":            "toneladas",
+                        "fonte_campo":        "Quantidade de Resíduos Recebidos (toneladas) - por Classe",
+                        "metodo_extracao":    "regex",
+                        "confianca":          "alta" if valor > 0 else "baixa",
+                        "anomaly_flag":       False,
+                    })
+    return registros
+
+
+def extrair_tecnologias(texto: str, periodo_ref: str) -> list[dict]:
+    """
+    Extrai quantidade de resíduos por tecnologia de destinação.
+    """
+    registros = []
+
+    tecnologias = [
+        "Armazenamento com ou sem",
+        "Armazenamento de Resíduos de",
+        "Aterro",
+        "Autoclave",
+        "Biodigestão",
+        "Biorremediação",
+        "Blendagem para Coprocessamento",
+        "Carbonização",
+        "Compostagem",
+        "Coprocessamento",
+        "Desativação da Fosfina",
+        "Descontaminação de Lâmpadas",
+        "Dessorção Térmica",
+        "Gaseificação",
+        "Incineração",
+        "Microondas",
+        "Pesquisa/Estudos",
+        "Pirólise",
+        "Reciclagem",
+        "Recuperação energética",
+        "Rerrefino",
+        "Reutilização",
+        "Transbordo de RSU",
+        "Tratamento Térmico",
+        "Tratamento de Efluentes",
+        "Uso Agrícola",
+        "Uso Alimentação Animal",
+    ]
+
+    # Extrair meses de referência da tabela de tecnologias
+    padrao_meses = r"Quantidade de Resíduos Recebidos \(toneladas\) - por Tecnologia\s*\n.*?(\w+/\d{4})\s+(\w+/\d{4})\s+(\w+/\d{4})"
+    m_meses = re.search(padrao_meses, texto, re.DOTALL)
+    meses_ref = []
+    if m_meses:
+        meses_ref = [m_meses.group(1), m_meses.group(2), m_meses.group(3)]
+
+    for tec in tecnologias:
+        padrao = re.escape(tec) + r"\s+([\d.,]+)\s+([\d.,]+)\s+([\d.,]+)"
+        m = re.search(padrao, texto)
+        if m:
+            for i in range(3):
+                valor = limpar_numero(m.group(i+1))
+                mes_ref = meses_ref[i] if i < len(meses_ref) else f"ref_{i+1}"
+                if valor is not None:
+                    registros.append({
+                        "periodo":            periodo_ref,
+                        "periodo_referencia": mes_ref,
+                        "categoria":          "residuos_por_tecnologia",
+                        "tecnologia":         tec,
+                        "quantidade_toneladas": valor,
+                        "unidade":            "toneladas",
+                        "fonte_campo":        "Quantidade de Resíduos Recebidos (toneladas) - por Tecnologia",
+                        "metodo_extracao":    "regex",
+                        "confianca":          "alta",
+                        "anomaly_flag":       False,
+                    })
+    return registros
+
+
+def aplicar_validacoes(registros: list[dict]) -> list[dict]:
+    """
+    Aplica regras de validação básicas e seta anomaly_flag.
+    MTR-038: quality flags
+    """
+    for r in registros:
+        qtd = r.get("quantidade_toneladas", r.get("quantidade"))
+        if qtd is None:
+            r["validation_status"] = "failed"
+            r["validation_note"] = "valor nulo"
+            continue
+
+        # Regra: volume extremo (mais de 10x a média esperada por classe)
+        if r.get("categoria") == "residuos_por_classe":
+            if qtd > 5_000_000:  # 5 milhões de toneladas em um mês = suspeito
+                r["anomaly_flag"] = True
+                r["validation_status"] = "flagged"
+                r["validation_note"] = f"volume extremo: {qtd:,.0f} t"
+                continue
+
+        r["validation_status"] = "passed"
+        r["anomaly_flag"] = r.get("anomaly_flag", False)
+
+    return registros
+
+
+def gerar_silver_id(periodo: str, categoria: str, chave: str) -> str:
+    raw = f"{periodo}::{categoria}::{chave}"
+    return "slv_" + hashlib.sha256(raw.encode()).hexdigest()[:12]
+
+
+def processar_pdf(doc_id: str, periodo: str, filepath: Path, dry_run: bool = False) -> dict:
+    """
+    Processa um PDF Bronze e extrai registros Silver.
+    """
+    log.info(f"[PARSE] {periodo} — {filepath.name}")
+
+    with pdfplumber.open(filepath) as pdf:
+        texto_completo = ""
+        for page in pdf.pages:
+            t = page.extract_text()
+            if t:
+                texto_completo += t + "\n"
+
+    # Extrair período do próprio documento (validação cruzada)
+    periodo_doc, label_doc = extrair_periodo_do_texto(texto_completo)
+    if periodo_doc and periodo_doc != periodo:
+        log.warning(f"  ⚠️  Período no filename ({periodo}) ≠ período no doc ({periodo_doc})")
+
+    # Extrair todos os dados
+    registros = []
+    registros += extrair_usuarios(texto_completo, periodo)
+    registros += extrair_mtrs(texto_completo, periodo)
+    registros += extrair_residuos_por_classe(texto_completo, periodo)
+    registros += extrair_tecnologias(texto_completo, periodo)
+
+    # Aplicar validações
+    registros = aplicar_validacoes(registros)
+
+    # Adicionar metadados de proveniência (Evidence)
+    ts = datetime.now(timezone.utc).isoformat()
+    for r in registros:
+        chave = f"{r.get('categoria','')}{r.get('perfil','')}{r.get('classe','')}{r.get('tecnologia','')}{r.get('periodo_referencia','')}"
+        r["silver_id"]        = gerar_silver_id(periodo, r.get("categoria",""), chave)
+        r["bronze_doc_id"]    = doc_id
+        r["bronze_filename"]  = filepath.name
+        r["schema_version"]   = "mtr_silver_v0.1"
+        r["responsible"]      = "Aquvaris MTR Parser v0.1"
+        r["extraction_timestamp"] = ts
+
+    # Estatísticas
+    passou   = sum(1 for r in registros if r.get("validation_status") == "passed")
+    flagged  = sum(1 for r in registros if r.get("validation_status") == "flagged")
+    falhou   = sum(1 for r in registros if r.get("validation_status") == "failed")
+
+    log.info(f"  Registros: {len(registros)} | ✅ {passou} | ⚠️ {flagged} | ❌ {falhou}")
+
+    if not dry_run:
+        # Salvar Silver
+        SILVER_DIR.mkdir(parents=True, exist_ok=True)
+        silver_file = SILVER_DIR / f"FEPAM_RGM_{periodo}_silver.json"
+        output = {
+            "metadata": {
+                "periodo":           periodo,
+                "label":             label_doc or periodo,
+                "bronze_doc_id":     doc_id,
+                "bronze_filename":   filepath.name,
+                "schema_version":    "mtr_silver_v0.1",
+                "parser_version":    "mtr_parser_v0.1",
+                "total_registros":   len(registros),
+                "validation_passed": passou,
+                "validation_flagged":flagged,
+                "validation_failed": falhou,
+                "extraction_timestamp": ts,
+            },
+            "registros": registros
+        }
+        with open(silver_file, "w", encoding="utf-8") as f:
+            json.dump(output, f, ensure_ascii=False, indent=2)
+        log.info(f"  💾 Salvo: {silver_file.name}")
+
+    return {"periodo": periodo, "total": len(registros), "passou": passou, "flagged": flagged}
+
+
+# ── Main ──────────────────────────────────────────────────────────────────────
+
+def main():
+    parser = argparse.ArgumentParser(description="Aquvaris MTR — Parser Silver (EPIC 04)")
+    parser.add_argument("--mes",     help="Processar só um período (ex: 2026-08)")
+    parser.add_argument("--dry-run", action="store_true", help="Mostrar sem salvar")
+    args = parser.parse_args()
+
+    if not MANIFEST.exists():
+        log.error(f"Manifest não encontrado: {MANIFEST}")
+        log.error("Execute mtr_ingestao.py primeiro.")
+        return
+
+    with open(MANIFEST, "r", encoding="utf-8") as f:
+        manifest = json.load(f)
+
+    documentos = manifest.get("documents", {})
+    if args.mes:
+        documentos = {k:v for k,v in documentos.items() if v.get("periodo") == args.mes}
+
+    if not documentos:
+        log.error("Nenhum documento encontrado no Bronze.")
+        return
+
+    log.info(f"Aquvaris MTR — Parser Silver v0.1")
+    log.info(f"Documentos a processar: {len(documentos)}")
+    if args.dry_run:
+        log.info("[DRY-RUN] Nenhum arquivo Silver será salvo.")
+    log.info("")
+
+    resultados = []
+    for doc_id, doc in sorted(documentos.items(), key=lambda x: x[1]["periodo"]):
+        filepath = Path(doc["filepath_bronze"])
+        if not filepath.exists():
+            log.warning(f"  [SKIP] Arquivo não encontrado: {filepath}")
+            continue
+        resultado = processar_pdf(doc_id, doc["periodo"], filepath, dry_run=args.dry_run)
+        resultados.append(resultado)
+
+    log.info(f"\n{'─'*55}")
+    log.info(f"Silver — {len(resultados)} documento(s) processado(s)")
+    total_registros = sum(r["total"] for r in resultados)
+    total_flagged   = sum(r["flagged"] for r in resultados)
+    log.info(f"Total de registros: {total_registros} | Flagged: {total_flagged}")
+    log.info(f"{'─'*55}")
+
+
+if __name__ == "__main__":
+    main()

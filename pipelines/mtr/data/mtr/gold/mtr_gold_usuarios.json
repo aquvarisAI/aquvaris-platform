@@ -1,0 +1,754 @@
+{
+  "gold_id": "gld_96e3afcb4b86",
+  "categoria": "usuarios_cadastrados",
+  "descricao": "Evolução dos usuários cadastrados no MTR Online por perfil",
+  "series": {
+    "Geradores": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade": 146682,
+          "variacao_pct": null,
+          "zscore": -0.92,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade": 146681,
+          "variacao_pct": -0.0,
+          "zscore": -0.92,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade": 146680,
+          "variacao_pct": -0.0,
+          "zscore": -0.921,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade": 146680,
+          "variacao_pct": 0.0,
+          "zscore": -0.921,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade": 146679,
+          "variacao_pct": -0.0,
+          "zscore": -0.921,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade": 146679,
+          "variacao_pct": 0.0,
+          "zscore": -0.921,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade": 146679,
+          "variacao_pct": 0.0,
+          "zscore": -0.921,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade": 146678,
+          "variacao_pct": -0.0,
+          "zscore": -0.921,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade": 148739,
+          "variacao_pct": 1.41,
+          "zscore": -0.573,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade": 148739,
+          "variacao_pct": 0.0,
+          "zscore": -0.573,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade": 150118,
+          "variacao_pct": 0.93,
+          "zscore": -0.34,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade": 154187,
+          "variacao_pct": 2.71,
+          "zscore": 0.347,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade": 154187,
+          "variacao_pct": 0.0,
+          "zscore": 0.347,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade": 154187,
+          "variacao_pct": 0.0,
+          "zscore": 0.347,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade": 157530,
+          "variacao_pct": 2.17,
+          "zscore": 0.911,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade": 157530,
+          "variacao_pct": 0.0,
+          "zscore": 0.911,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade": 157530,
+          "variacao_pct": 0.0,
+          "zscore": 0.911,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade": 162165,
+          "variacao_pct": 2.94,
+          "zscore": 1.693,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade": 162165,
+          "variacao_pct": 0.0,
+          "zscore": 1.693,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade": 162165,
+          "variacao_pct": 0.0,
+          "zscore": 1.693,
+          "anomaly_flag": false
+        }
+      ],
+      "media": 152134.0,
+      "desvio_padrao": 5925.0,
+      "crescimento_total_pct": 10.56,
+      "ultimo_valor": 162165,
+      "n_periodos": 20
+    },
+    "Transportadores": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade": 14003,
+          "variacao_pct": null,
+          "zscore": -0.918,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade": 14003,
+          "variacao_pct": 0.0,
+          "zscore": -0.918,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade": 14003,
+          "variacao_pct": 0.0,
+          "zscore": -0.918,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade": 14003,
+          "variacao_pct": 0.0,
+          "zscore": -0.918,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade": 14003,
+          "variacao_pct": 0.0,
+          "zscore": -0.918,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade": 14003,
+          "variacao_pct": 0.0,
+          "zscore": -0.918,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade": 14003,
+          "variacao_pct": 0.0,
+          "zscore": -0.918,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade": 14003,
+          "variacao_pct": 0.0,
+          "zscore": -0.918,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade": 14160,
+          "variacao_pct": 1.12,
+          "zscore": -0.596,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade": 14160,
+          "variacao_pct": 0.0,
+          "zscore": -0.596,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade": 14278,
+          "variacao_pct": 0.83,
+          "zscore": -0.355,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade": 14620,
+          "variacao_pct": 2.4,
+          "zscore": 0.345,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade": 14620,
+          "variacao_pct": 0.0,
+          "zscore": 0.345,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade": 14620,
+          "variacao_pct": 0.0,
+          "zscore": 0.345,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade": 14913,
+          "variacao_pct": 2.0,
+          "zscore": 0.945,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade": 14913,
+          "variacao_pct": 0.0,
+          "zscore": 0.945,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade": 14913,
+          "variacao_pct": 0.0,
+          "zscore": 0.945,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade": 15268,
+          "variacao_pct": 2.38,
+          "zscore": 1.672,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade": 15268,
+          "variacao_pct": 0.0,
+          "zscore": 1.672,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade": 15268,
+          "variacao_pct": 0.0,
+          "zscore": 1.672,
+          "anomaly_flag": false
+        }
+      ],
+      "media": 14451.0,
+      "desvio_padrao": 488.0,
+      "crescimento_total_pct": 9.03,
+      "ultimo_valor": 15268,
+      "n_periodos": 20
+    },
+    "Destinadores": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade": 8482,
+          "variacao_pct": null,
+          "zscore": -0.915,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade": 8482,
+          "variacao_pct": 0.0,
+          "zscore": -0.915,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade": 8482,
+          "variacao_pct": 0.0,
+          "zscore": -0.915,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade": 8482,
+          "variacao_pct": 0.0,
+          "zscore": -0.915,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade": 8482,
+          "variacao_pct": 0.0,
+          "zscore": -0.915,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade": 8482,
+          "variacao_pct": 0.0,
+          "zscore": -0.915,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade": 8482,
+          "variacao_pct": 0.0,
+          "zscore": -0.915,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade": 8482,
+          "variacao_pct": 0.0,
+          "zscore": -0.915,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade": 8545,
+          "variacao_pct": 0.74,
+          "zscore": -0.679,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade": 8545,
+          "variacao_pct": 0.0,
+          "zscore": -0.679,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade": 8613,
+          "variacao_pct": 0.8,
+          "zscore": -0.424,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade": 8843,
+          "variacao_pct": 2.67,
+          "zscore": 0.44,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade": 8843,
+          "variacao_pct": 0.0,
+          "zscore": 0.44,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade": 8843,
+          "variacao_pct": 0.0,
+          "zscore": 0.44,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade": 8993,
+          "variacao_pct": 1.7,
+          "zscore": 1.003,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade": 8993,
+          "variacao_pct": 0.0,
+          "zscore": 1.003,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade": 8993,
+          "variacao_pct": 0.0,
+          "zscore": 1.003,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade": 9150,
+          "variacao_pct": 1.75,
+          "zscore": 1.592,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade": 9150,
+          "variacao_pct": 0.0,
+          "zscore": 1.592,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade": 9150,
+          "variacao_pct": 0.0,
+          "zscore": 1.592,
+          "anomaly_flag": false
+        }
+      ],
+      "media": 8726.0,
+      "desvio_padrao": 266.0,
+      "crescimento_total_pct": 7.88,
+      "ultimo_valor": 9150,
+      "n_periodos": 20
+    },
+    "Armazenadores Temp.": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade": 118,
+          "variacao_pct": null,
+          "zscore": -0.88,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade": 118,
+          "variacao_pct": 0.0,
+          "zscore": -0.88,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade": 118,
+          "variacao_pct": 0.0,
+          "zscore": -0.88,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade": 118,
+          "variacao_pct": 0.0,
+          "zscore": -0.88,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade": 118,
+          "variacao_pct": 0.0,
+          "zscore": -0.88,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade": 118,
+          "variacao_pct": 0.0,
+          "zscore": -0.88,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade": 118,
+          "variacao_pct": 0.0,
+          "zscore": -0.88,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade": 118,
+          "variacao_pct": 0.0,
+          "zscore": -0.88,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade": 119,
+          "variacao_pct": 0.85,
+          "zscore": -0.67,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade": 119,
+          "variacao_pct": 0.0,
+          "zscore": -0.67,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade": 119,
+          "variacao_pct": 0.0,
+          "zscore": -0.67,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade": 124,
+          "variacao_pct": 4.2,
+          "zscore": 0.377,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade": 124,
+          "variacao_pct": 0.0,
+          "zscore": 0.377,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade": 124,
+          "variacao_pct": 0.0,
+          "zscore": 0.377,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade": 127,
+          "variacao_pct": 2.42,
+          "zscore": 1.005,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade": 127,
+          "variacao_pct": 0.0,
+          "zscore": 1.005,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade": 127,
+          "variacao_pct": 0.0,
+          "zscore": 1.005,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade": 130,
+          "variacao_pct": 2.36,
+          "zscore": 1.634,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade": 130,
+          "variacao_pct": 0.0,
+          "zscore": 1.634,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade": 130,
+          "variacao_pct": 0.0,
+          "zscore": 1.634,
+          "anomaly_flag": false
+        }
+      ],
+      "media": 122.0,
+      "desvio_padrao": 5.0,
+      "crescimento_total_pct": 10.17,
+      "ultimo_valor": 130,
+      "n_periodos": 20
+    },
+    "Total Geral": {
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade": 169285,
+          "variacao_pct": null,
+          "zscore": -0.92,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade": 169284,
+          "variacao_pct": -0.0,
+          "zscore": -0.92,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade": 169283,
+          "variacao_pct": -0.0,
+          "zscore": -0.92,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade": 169283,
+          "variacao_pct": 0.0,
+          "zscore": -0.92,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade": 169282,
+          "variacao_pct": -0.0,
+          "zscore": -0.92,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade": 169282,
+          "variacao_pct": 0.0,
+          "zscore": -0.92,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade": 169282,
+          "variacao_pct": 0.0,
+          "zscore": -0.92,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade": 169281,
+          "variacao_pct": -0.0,
+          "zscore": -0.92,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade": 171563,
+          "variacao_pct": 1.35,
+          "zscore": -0.579,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade": 171563,
+          "variacao_pct": 0.0,
+          "zscore": -0.579,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade": 173128,
+          "variacao_pct": 0.91,
+          "zscore": -0.345,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade": 177774,
+          "variacao_pct": 2.68,
+          "zscore": 0.35,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade": 177774,
+          "variacao_pct": 0.0,
+          "zscore": 0.35,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade": 177774,
+          "variacao_pct": 0.0,
+          "zscore": 0.35,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade": 181563,
+          "variacao_pct": 2.13,
+          "zscore": 0.917,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade": 181563,
+          "variacao_pct": 0.0,
+          "zscore": 0.917,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade": 181563,
+          "variacao_pct": 0.0,
+          "zscore": 0.917,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade": 186713,
+          "variacao_pct": 2.84,
+          "zscore": 1.688,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade": 186713,
+          "variacao_pct": 0.0,
+          "zscore": 1.688,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade": 186713,
+          "variacao_pct": 0.0,
+          "zscore": 1.688,
+          "anomaly_flag": false
+        }
+      ],
+      "media": 175433.0,
+      "desvio_padrao": 6684.0,
+      "crescimento_total_pct": 10.3,
+      "ultimo_valor": 186713,
+      "n_periodos": 20
+    }
+  },
+  "gerado_em": "2026-09-17T01:49:04.885496+00:00",
+  "schema_version": "mtr_gold_v0.1"
+}

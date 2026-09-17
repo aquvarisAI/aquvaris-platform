@@ -1,0 +1,10 @@
+{
+  "gold_id": "gld_dfaa42a6e5b4",
+  "categoria": "residuos_por_classe",
+  "descricao": "Evolução mensal de resíduos recebidos por classe — Z-score para anomalias",
+  "series": {},
+  "anomalias": [],
+  "total_anomalias": 0,
+  "gerado_em": "2026-09-17T01:49:04.887644+00:00",
+  "schema_version": "mtr_gold_v0.1"
+}

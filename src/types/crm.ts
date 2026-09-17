@@ -50,6 +50,7 @@ export type CompanySegment =
 
 export interface Lead {
   id: string;
+  tenantId: string;      // organização à qual este registro pertence
   nome: string;
   cargo?: string;
   email?: string;
@@ -82,6 +83,7 @@ export interface Lead {
 
 export interface Company {
   id: string;
+  tenantId: string;      // organização à qual este registro pertence
   nome: string;
   cnpj?: string;
   segmento: CompanySegment;
@@ -100,6 +102,7 @@ export interface Company {
 
 export interface Interaction {
   id: string;
+  tenantId: string;      // organização à qual este registro pertence
   leadId: string;
   tipo: InteractionType;
   titulo: string;
@@ -115,6 +118,7 @@ export interface Interaction {
 
 export interface Task {
   id: string;
+  tenantId: string;      // organização à qual este registro pertence
   leadId?: string;
   titulo: string;
   descricao?: string;
