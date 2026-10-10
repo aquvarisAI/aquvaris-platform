@@ -1,0 +1,3457 @@
+{
+  "gold_id": "gld_304466e8a11e",
+  "categoria": "residuos_por_codigo",
+  "descricao": "Ranking mensal (top ~20) de resíduos por código IBAMA/grupo regulatório com maior relevância mássica",
+  "mes_referencia": "2026-08",
+  "ranking": [
+    {
+      "posicao": 1,
+      "codigo": "200399",
+      "descricao": "Resíduos urbanos e equiparados não anteriormente especificados",
+      "quantidade_toneladas": 92045.6
+    },
+    {
+      "posicao": 2,
+      "codigo": "200301",
+      "descricao": "Outros resíduos urbanos e equiparados, incluindo misturas de resíduos",
+      "quantidade_toneladas": 88428.8
+    },
+    {
+      "posicao": 3,
+      "codigo": "Classe A",
+      "descricao": "Resíduos reutilizáveis ou recicláveis como agregados, tais como: a) de construção, demolição, reformas e reparos de pavimentação e de outras",
+      "quantidade_toneladas": 87757.8
+    },
+    {
+      "posicao": 4,
+      "codigo": "200304",
+      "descricao": "Lodos de fossas sépticas",
+      "quantidade_toneladas": 66677.6
+    },
+    {
+      "posicao": 5,
+      "codigo": "Classe B",
+      "descricao": "Resíduos recicláveis para outras destinações, tais como plásticos, papel, papelão, metais, vidros, madeiras, embalagens vazias de tintas",
+      "quantidade_toneladas": 5196.8
+    },
+    {
+      "posicao": 6,
+      "codigo": "Grupo A",
+      "descricao": "Resíduos de Serviços de Saúde classificados como Grupos A1, A2, A3, A4 ou A5, conforme ANVISA RDC 222/2018 - Contempla os resíduos",
+      "quantidade_toneladas": 2221.8
+    },
+    {
+      "posicao": 7,
+      "codigo": "Grupo B",
+      "descricao": "Produtos hormonais e produtos antimicrobianos; citostáticos; antineoplásicos - imunossupressores; digitálicos; imunomoduladores; anti-",
+      "quantidade_toneladas": 814.8
+    },
+    {
+      "posicao": 8,
+      "codigo": "Grupo D",
+      "descricao": "Resíduos que não apresentam risco biológico, químico ou radiológico à saúde ou ao meio ambiente, podendo ser equiparados aos resíduos",
+      "quantidade_toneladas": 638.7
+    },
+    {
+      "posicao": 9,
+      "codigo": "200306",
+      "descricao": "Resíduos de limpeza de esgotos, bueiros e bocas de lobo",
+      "quantidade_toneladas": 589.4
+    },
+    {
+      "posicao": 10,
+      "codigo": "Grupo E",
+      "descricao": "Materiais perfurocortantes ou escarificantes, tais como: lâminas de barbear, agulhas, escalpes, ampolas de vidro, brocas, limas endodônticas,",
+      "quantidade_toneladas": 564.4
+    },
+    {
+      "posicao": 11,
+      "codigo": "200303",
+      "descricao": "Resíduos da limpeza de ruas e de galerias de drenagem pluvial",
+      "quantidade_toneladas": 295.3
+    },
+    {
+      "posicao": 12,
+      "codigo": "Grupo A1",
+      "descricao": "Culturas e estoques de micro-organismos; resíduos de fabricação de produtos biológicos, exceto os hemoderivados; descarte de vacinas de",
+      "quantidade_toneladas": 104.2
+    },
+    {
+      "posicao": 13,
+      "codigo": "Classe D",
+      "descricao": "Resíduos perigosos oriundos do processo de construção, tais como tintas, solventes, óleos e outros ou aqueles contaminados ou prejudiciais à",
+      "quantidade_toneladas": 67.3
+    },
+    {
+      "posicao": 14,
+      "codigo": "200302",
+      "descricao": "Resíduos de mercados públicos e feiras",
+      "quantidade_toneladas": 23.9
+    },
+    {
+      "posicao": 15,
+      "codigo": "Classe C",
+      "descricao": "Resíduos para os quais não foram desenvolvidas tecnologias ou aplicações economicamente viáveis que permitam a sua reciclagem ou",
+      "quantidade_toneladas": 22.2
+    },
+    {
+      "posicao": 16,
+      "codigo": "Grupo A4",
+      "descricao": "Kits de linhas arteriais, endovenosas e dialisadores, quando descartados; Filtros de ar e gases de área contaminada; membrana filtrante de",
+      "quantidade_toneladas": 7.4
+    },
+    {
+      "posicao": 17,
+      "codigo": "Grupo A2",
+      "descricao": "Carcaças, peças anatômicas, vísceras e outros resíduos provenientes de animais submetidos a processos de experimentação com inoculação de",
+      "quantidade_toneladas": 6.7
+    },
+    {
+      "posicao": 18,
+      "codigo": "Grupo A5",
+      "descricao": "Órgãos, tecidos, fluidos orgânicos, materiais perfurocortantes ou escarificantes e demais materiais resultantes da atenção à saúde de indivíduos",
+      "quantidade_toneladas": 2.0
+    },
+    {
+      "posicao": 19,
+      "codigo": "Grupo A3",
+      "descricao": "Peças anatômicas (membros) do ser humano; produto de fecundação sem sinais vitais, com peso menor que 500 gramas ou estatura menor que",
+      "quantidade_toneladas": 0.9
+    },
+    {
+      "posicao": 20,
+      "codigo": "Grupo C",
+      "descricao": "Materiais resultantes de laboratórios de pesquisa e ensino na área de saúde, laboratórios de análises clínicas e serviços de medicina nuclear e",
+      "quantidade_toneladas": 0.01
+    }
+  ],
+  "series": {
+    "200202": {
+      "descricao": "Terras e pedras",
+      "serie": [
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 605.2,
+          "variacao_pct": null,
+          "zscore": 1.342,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 206.9,
+          "variacao_pct": -65.81,
+          "zscore": -0.318,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 31.6,
+          "variacao_pct": -84.73,
+          "zscore": -1.048,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 288.9,
+          "variacao_pct": 814.24,
+          "zscore": 0.024,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 283.15,
+      "n_meses_no_ranking": 4
+    },
+    "200203": {
+      "descricao": "Outros resíduos de varrição, limpeza de logradouros e vias públicas e outros serviços de limpeza urbana não biodegradáveis",
+      "serie": [
+        {
+          "periodo": "2024-11",
+          "quantidade_toneladas": 19476.1,
+          "variacao_pct": null,
+          "zscore": 1.058,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2024-12",
+          "quantidade_toneladas": 18709.5,
+          "variacao_pct": -3.94,
+          "zscore": 0.921,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 26533.0,
+          "variacao_pct": 41.82,
+          "zscore": 2.319,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 14204.1,
+          "variacao_pct": -46.47,
+          "zscore": 0.115,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 14462.7,
+          "variacao_pct": 1.82,
+          "zscore": 0.162,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 15405.5,
+          "variacao_pct": 6.52,
+          "zscore": 0.33,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 10251.5,
+          "variacao_pct": -33.46,
+          "zscore": -0.591,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 10154.8,
+          "variacao_pct": -0.94,
+          "zscore": -0.608,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 7158.7,
+          "variacao_pct": -29.5,
+          "zscore": -1.144,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 10533.7,
+          "variacao_pct": 47.15,
+          "zscore": -0.54,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 11156.5,
+          "variacao_pct": 5.91,
+          "zscore": -0.429,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 12504.5,
+          "variacao_pct": 12.08,
+          "zscore": -0.188,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 5704.3,
+          "variacao_pct": -54.38,
+          "zscore": -1.404,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 13558.07,
+      "n_meses_no_ranking": 13
+    },
+    "200301": {
+      "descricao": "Outros resíduos urbanos e equiparados, incluindo misturas de resíduos",
+      "serie": [
+        {
+          "periodo": "2024-11",
+          "quantidade_toneladas": 210619.0,
+          "variacao_pct": null,
+          "zscore": 3.73,
+          "anomaly_flag": true
+        },
+        {
+          "periodo": "2024-12",
+          "quantidade_toneladas": 149255.0,
+          "variacao_pct": -29.14,
+          "zscore": 1.792,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 96539.0,
+          "variacao_pct": -35.32,
+          "zscore": 0.126,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 77990.5,
+          "variacao_pct": -19.21,
+          "zscore": -0.46,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 72247.0,
+          "variacao_pct": -7.36,
+          "zscore": -0.641,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 76903.7,
+          "variacao_pct": 6.45,
+          "zscore": -0.494,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 85418.9,
+          "variacao_pct": 11.07,
+          "zscore": -0.225,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 72654.2,
+          "variacao_pct": -14.94,
+          "zscore": -0.628,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 85027.5,
+          "variacao_pct": 17.03,
+          "zscore": -0.237,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 64592.6,
+          "variacao_pct": -24.03,
+          "zscore": -0.883,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 80923.2,
+          "variacao_pct": 25.28,
+          "zscore": -0.367,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 81968.4,
+          "variacao_pct": 1.29,
+          "zscore": -0.334,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 108697.7,
+          "variacao_pct": 32.61,
+          "zscore": 0.51,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 88805.8,
+          "variacao_pct": -18.3,
+          "zscore": -0.118,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 86734.7,
+          "variacao_pct": -2.33,
+          "zscore": -0.183,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 93658.3,
+          "variacao_pct": 7.98,
+          "zscore": 0.035,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 101277.3,
+          "variacao_pct": 8.13,
+          "zscore": 0.276,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 76549.8,
+          "variacao_pct": -24.42,
+          "zscore": -0.505,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 87495.2,
+          "variacao_pct": 14.3,
+          "zscore": -0.159,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 84297.0,
+          "variacao_pct": -3.66,
+          "zscore": -0.26,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 65755.1,
+          "variacao_pct": -22.0,
+          "zscore": -0.846,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 88428.8,
+          "variacao_pct": 34.48,
+          "zscore": -0.13,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 92538.12,
+      "n_meses_no_ranking": 22
+    },
+    "200302": {
+      "descricao": "Resíduos de mercados públicos e feiras",
+      "serie": [
+        {
+          "periodo": "2024-11",
+          "quantidade_toneladas": 47.8,
+          "variacao_pct": null,
+          "zscore": -0.878,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2024-12",
+          "quantidade_toneladas": 84.0,
+          "variacao_pct": 75.73,
+          "zscore": -0.021,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 67.3,
+          "variacao_pct": -19.88,
+          "zscore": -0.416,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 162.0,
+          "variacao_pct": 140.71,
+          "zscore": 1.826,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 58.0,
+          "variacao_pct": -64.2,
+          "zscore": -0.636,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 121.4,
+          "variacao_pct": 109.31,
+          "zscore": 0.865,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 59.6,
+          "variacao_pct": -50.91,
+          "zscore": -0.598,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 51.6,
+          "variacao_pct": -13.42,
+          "zscore": -0.788,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 70.6,
+          "variacao_pct": 36.82,
+          "zscore": -0.338,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 88.3,
+          "variacao_pct": 25.07,
+          "zscore": 0.081,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 75.3,
+          "variacao_pct": -14.72,
+          "zscore": -0.227,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 111.8,
+          "variacao_pct": 48.47,
+          "zscore": 0.637,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 118.9,
+          "variacao_pct": 6.35,
+          "zscore": 0.805,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 66.9,
+          "variacao_pct": -43.73,
+          "zscore": -0.426,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 77.2,
+          "variacao_pct": 15.4,
+          "zscore": -0.182,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 154.8,
+          "variacao_pct": 100.52,
+          "zscore": 1.655,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 183.2,
+          "variacao_pct": 18.35,
+          "zscore": 2.328,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 104.1,
+          "variacao_pct": -43.18,
+          "zscore": 0.455,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 63.8,
+          "variacao_pct": -38.71,
+          "zscore": -0.499,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 43.4,
+          "variacao_pct": -31.97,
+          "zscore": -0.982,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 33.4,
+          "variacao_pct": -23.04,
+          "zscore": -1.219,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 23.9,
+          "variacao_pct": -28.44,
+          "zscore": -1.444,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 84.88,
+      "n_meses_no_ranking": 22
+    },
+    "200303": {
+      "descricao": "Resíduos da limpeza de ruas e de galerias de drenagem pluvial",
+      "serie": [
+        {
+          "periodo": "2024-11",
+          "quantidade_toneladas": 10.8,
+          "variacao_pct": null,
+          "zscore": -1.607,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2024-12",
+          "quantidade_toneladas": 713.0,
+          "variacao_pct": 6501.85,
+          "zscore": 0.226,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 425.4,
+          "variacao_pct": -40.34,
+          "zscore": -0.525,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 743.7,
+          "variacao_pct": 74.82,
+          "zscore": 0.306,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 18.5,
+          "variacao_pct": -97.51,
+          "zscore": -1.587,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 450.3,
+          "variacao_pct": 2334.05,
+          "zscore": -0.46,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 438.5,
+          "variacao_pct": -2.62,
+          "zscore": -0.491,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 363.6,
+          "variacao_pct": -17.08,
+          "zscore": -0.686,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 862.9,
+          "variacao_pct": 137.32,
+          "zscore": 0.618,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 1107.2,
+          "variacao_pct": 28.31,
+          "zscore": 1.256,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 981.4,
+          "variacao_pct": -11.36,
+          "zscore": 0.927,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 1137.1,
+          "variacao_pct": 15.87,
+          "zscore": 1.334,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 997.0,
+          "variacao_pct": -12.32,
+          "zscore": 0.968,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 1244.6,
+          "variacao_pct": 24.83,
+          "zscore": 1.614,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 1199.3,
+          "variacao_pct": -3.64,
+          "zscore": 1.496,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 505.3,
+          "variacao_pct": -57.87,
+          "zscore": -0.316,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 731.4,
+          "variacao_pct": 44.75,
+          "zscore": 0.274,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 37.4,
+          "variacao_pct": -94.89,
+          "zscore": -1.538,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 532.7,
+          "variacao_pct": 1324.33,
+          "zscore": -0.245,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 699.3,
+          "variacao_pct": 31.27,
+          "zscore": 0.19,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 285.6,
+          "variacao_pct": -59.16,
+          "zscore": -0.89,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 295.3,
+          "variacao_pct": 3.4,
+          "zscore": -0.865,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 626.38,
+      "n_meses_no_ranking": 22
+    },
+    "200304": {
+      "descricao": "Lodos de fossas sépticas",
+      "serie": [
+        {
+          "periodo": "2024-11",
+          "quantidade_toneladas": 87374.8,
+          "variacao_pct": null,
+          "zscore": 1.208,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2024-12",
+          "quantidade_toneladas": 39577.1,
+          "variacao_pct": -54.7,
+          "zscore": -0.627,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 23878.6,
+          "variacao_pct": -39.67,
+          "zscore": -1.23,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 18152.7,
+          "variacao_pct": -23.98,
+          "zscore": -1.45,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 17860.7,
+          "variacao_pct": -1.61,
+          "zscore": -1.461,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 15721.9,
+          "variacao_pct": -11.97,
+          "zscore": -1.543,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 36494.8,
+          "variacao_pct": 132.13,
+          "zscore": -0.746,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 55246.4,
+          "variacao_pct": 51.38,
+          "zscore": -0.026,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 82589.1,
+          "variacao_pct": 49.49,
+          "zscore": 1.024,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 77345.4,
+          "variacao_pct": -6.35,
+          "zscore": 0.823,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 87188.6,
+          "variacao_pct": 12.73,
+          "zscore": 1.201,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 52316.8,
+          "variacao_pct": -40.0,
+          "zscore": -0.138,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 50178.4,
+          "variacao_pct": -4.09,
+          "zscore": -0.22,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 60711.4,
+          "variacao_pct": 20.99,
+          "zscore": 0.184,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 67279.8,
+          "variacao_pct": 10.82,
+          "zscore": 0.436,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 50420.2,
+          "variacao_pct": -25.06,
+          "zscore": -0.211,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 40841.2,
+          "variacao_pct": -19.0,
+          "zscore": -0.579,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 66428.3,
+          "variacao_pct": 62.65,
+          "zscore": 0.404,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 74536.1,
+          "variacao_pct": 12.21,
+          "zscore": 0.715,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 42252.1,
+          "variacao_pct": -43.31,
+          "zscore": -0.524,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 116994.4,
+          "variacao_pct": 176.9,
+          "zscore": 2.345,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 66677.6,
+          "variacao_pct": -43.01,
+          "zscore": 0.413,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 55912.11,
+      "n_meses_no_ranking": 22
+    },
+    "200306": {
+      "descricao": "Resíduos de limpeza de esgotos, bueiros e bocas de lobo",
+      "serie": [
+        {
+          "periodo": "2024-11",
+          "quantidade_toneladas": 154.6,
+          "variacao_pct": null,
+          "zscore": -0.348,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2024-12",
+          "quantidade_toneladas": 460.7,
+          "variacao_pct": 197.99,
+          "zscore": -0.316,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 300.1,
+          "variacao_pct": -34.86,
+          "zscore": -0.333,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 317.9,
+          "variacao_pct": 5.93,
+          "zscore": -0.331,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 538.9,
+          "variacao_pct": 69.52,
+          "zscore": -0.308,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 218.1,
+          "variacao_pct": -59.53,
+          "zscore": -0.342,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 4140.8,
+          "variacao_pct": 1798.58,
+          "zscore": 0.071,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 122.1,
+          "variacao_pct": -97.05,
+          "zscore": -0.352,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 103.2,
+          "variacao_pct": -15.48,
+          "zscore": -0.354,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 656.1,
+          "variacao_pct": 535.76,
+          "zscore": -0.296,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 366.3,
+          "variacao_pct": -44.17,
+          "zscore": -0.326,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 495.8,
+          "variacao_pct": 35.35,
+          "zscore": -0.312,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 390.6,
+          "variacao_pct": -21.22,
+          "zscore": -0.324,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 190.8,
+          "variacao_pct": -51.15,
+          "zscore": -0.345,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 28269.5,
+          "variacao_pct": 14716.3,
+          "zscore": 2.607,
+          "anomaly_flag": true
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 433.3,
+          "variacao_pct": -98.47,
+          "zscore": -0.319,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 455.4,
+          "variacao_pct": 5.1,
+          "zscore": -0.317,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 36678.2,
+          "variacao_pct": 7954.06,
+          "zscore": 3.491,
+          "anomaly_flag": true
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 278.8,
+          "variacao_pct": -99.24,
+          "zscore": -0.335,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 476.8,
+          "variacao_pct": 71.02,
+          "zscore": -0.314,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 663.3,
+          "variacao_pct": 39.11,
+          "zscore": -0.295,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 589.4,
+          "variacao_pct": -11.14,
+          "zscore": -0.303,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 3468.21,
+      "n_meses_no_ranking": 22
+    },
+    "200399": {
+      "descricao": "Resíduos urbanos e equiparados não anteriormente especificados",
+      "serie": [
+        {
+          "periodo": "2024-11",
+          "quantidade_toneladas": 89005.7,
+          "variacao_pct": null,
+          "zscore": 0.344,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2024-12",
+          "quantidade_toneladas": 92834.0,
+          "variacao_pct": 4.3,
+          "zscore": 0.834,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 95034.0,
+          "variacao_pct": 2.37,
+          "zscore": 1.116,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 87251.7,
+          "variacao_pct": -8.19,
+          "zscore": 0.119,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 78429.6,
+          "variacao_pct": -10.11,
+          "zscore": -1.01,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 86306.8,
+          "variacao_pct": 10.04,
+          "zscore": -0.002,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 73534.6,
+          "variacao_pct": -14.8,
+          "zscore": -1.637,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 87688.2,
+          "variacao_pct": 19.25,
+          "zscore": 0.175,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 69403.9,
+          "variacao_pct": -20.85,
+          "zscore": -2.166,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 80479.2,
+          "variacao_pct": 15.96,
+          "zscore": -0.748,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 80656.3,
+          "variacao_pct": 0.22,
+          "zscore": -0.725,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 87823.0,
+          "variacao_pct": 8.89,
+          "zscore": 0.192,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 78288.4,
+          "variacao_pct": -10.86,
+          "zscore": -1.028,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 96045.0,
+          "variacao_pct": 22.68,
+          "zscore": 1.245,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 99694.9,
+          "variacao_pct": 3.8,
+          "zscore": 1.713,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 78499.8,
+          "variacao_pct": -21.26,
+          "zscore": -1.001,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 91148.4,
+          "variacao_pct": 16.11,
+          "zscore": 0.618,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 89957.1,
+          "variacao_pct": -1.31,
+          "zscore": 0.466,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 80648.6,
+          "variacao_pct": -10.35,
+          "zscore": -0.726,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 90755.8,
+          "variacao_pct": 12.53,
+          "zscore": 0.568,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 93511.0,
+          "variacao_pct": 3.04,
+          "zscore": 0.921,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 92045.6,
+          "variacao_pct": -1.57,
+          "zscore": 0.733,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 86320.07,
+      "n_meses_no_ranking": 22
+    },
+    "Classe A": {
+      "descricao": "Resíduos reutilizáveis ou recicláveis como agregados, tais como: a) de construção, demolição, reformas e reparos de pavimentação e de outras",
+      "serie": [
+        {
+          "periodo": "2024-11",
+          "quantidade_toneladas": 1605191.4,
+          "variacao_pct": null,
+          "zscore": 4.189,
+          "anomaly_flag": true
+        },
+        {
+          "periodo": "2024-12",
+          "quantidade_toneladas": 608066.0,
+          "variacao_pct": -62.12,
+          "zscore": 1.284,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 38872.4,
+          "variacao_pct": -93.61,
+          "zscore": -0.375,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 43354.6,
+          "variacao_pct": 11.53,
+          "zscore": -0.362,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 69004.6,
+          "variacao_pct": 59.16,
+          "zscore": -0.287,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 50727.3,
+          "variacao_pct": -26.49,
+          "zscore": -0.34,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 159587.9,
+          "variacao_pct": 214.6,
+          "zscore": -0.023,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 193436.0,
+          "variacao_pct": 21.21,
+          "zscore": 0.075,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 99226.3,
+          "variacao_pct": -48.7,
+          "zscore": -0.199,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 61203.1,
+          "variacao_pct": -38.32,
+          "zscore": -0.31,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 66730.8,
+          "variacao_pct": 9.03,
+          "zscore": -0.294,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 116640.2,
+          "variacao_pct": 74.79,
+          "zscore": -0.148,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 37865.5,
+          "variacao_pct": -67.54,
+          "zscore": -0.378,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 13913.9,
+          "variacao_pct": -63.25,
+          "zscore": -0.448,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 21760.1,
+          "variacao_pct": 56.39,
+          "zscore": -0.425,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 90240.8,
+          "variacao_pct": 314.71,
+          "zscore": -0.225,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 79072.1,
+          "variacao_pct": -12.38,
+          "zscore": -0.258,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 59248.8,
+          "variacao_pct": -25.07,
+          "zscore": -0.316,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 75667.4,
+          "variacao_pct": 27.71,
+          "zscore": -0.268,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 63569.9,
+          "variacao_pct": -15.99,
+          "zscore": -0.303,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 44697.9,
+          "variacao_pct": -29.69,
+          "zscore": -0.358,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 87757.8,
+          "variacao_pct": 96.34,
+          "zscore": -0.232,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 167537.95,
+      "n_meses_no_ranking": 22
+    },
+    "Classe B": {
+      "descricao": "Resíduos recicláveis para outras destinações, tais como plásticos, papel, papelão, metais, vidros, madeiras, embalagens vazias de tintas",
+      "serie": [
+        {
+          "periodo": "2024-11",
+          "quantidade_toneladas": 4751.0,
+          "variacao_pct": null,
+          "zscore": -0.756,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2024-12",
+          "quantidade_toneladas": 6208.0,
+          "variacao_pct": 30.67,
+          "zscore": -0.246,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 5235.3,
+          "variacao_pct": -15.67,
+          "zscore": -0.586,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 6619.7,
+          "variacao_pct": 26.44,
+          "zscore": -0.101,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 8463.4,
+          "variacao_pct": 27.85,
+          "zscore": 0.545,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 7252.5,
+          "variacao_pct": -14.31,
+          "zscore": 0.12,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 7208.4,
+          "variacao_pct": -0.61,
+          "zscore": 0.105,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 5990.0,
+          "variacao_pct": -16.9,
+          "zscore": -0.322,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 6956.7,
+          "variacao_pct": 16.14,
+          "zscore": 0.017,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 9872.9,
+          "variacao_pct": 41.92,
+          "zscore": 1.039,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 10093.2,
+          "variacao_pct": 2.23,
+          "zscore": 1.116,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 8981.6,
+          "variacao_pct": -11.01,
+          "zscore": 0.726,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 7893.1,
+          "variacao_pct": -12.12,
+          "zscore": 0.345,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 16826.2,
+          "variacao_pct": 113.18,
+          "zscore": 3.475,
+          "anomaly_flag": true
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 6499.2,
+          "variacao_pct": -61.37,
+          "zscore": -0.144,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 4407.1,
+          "variacao_pct": -32.19,
+          "zscore": -0.877,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 4409.6,
+          "variacao_pct": 0.06,
+          "zscore": -0.876,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 3438.0,
+          "variacao_pct": -22.03,
+          "zscore": -1.216,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 4951.1,
+          "variacao_pct": 44.01,
+          "zscore": -0.686,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 4749.1,
+          "variacao_pct": -4.08,
+          "zscore": -0.757,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 5995.3,
+          "variacao_pct": 26.24,
+          "zscore": -0.32,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 5196.8,
+          "variacao_pct": -13.32,
+          "zscore": -0.6,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 6909.01,
+      "n_meses_no_ranking": 22
+    },
+    "Classe C": {
+      "descricao": "Resíduos para os quais não foram desenvolvidas tecnologias ou aplicações economicamente viáveis que permitam a sua reciclagem ou",
+      "serie": [
+        {
+          "periodo": "2024-12",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.508,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.508,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 34.0,
+          "variacao_pct": null,
+          "zscore": 0.475,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": -100.0,
+          "zscore": -0.508,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.508,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 151.2,
+          "variacao_pct": null,
+          "zscore": 3.864,
+          "anomaly_flag": true
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 52.6,
+          "variacao_pct": -65.21,
+          "zscore": 1.013,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 5.5,
+          "variacao_pct": -89.54,
+          "zscore": -0.349,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 0.5,
+          "variacao_pct": -90.91,
+          "zscore": -0.494,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 3.5,
+          "variacao_pct": 600.0,
+          "zscore": -0.407,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 52.4,
+          "variacao_pct": 1397.14,
+          "zscore": 1.007,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 2.3,
+          "variacao_pct": -95.61,
+          "zscore": -0.442,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 3.7,
+          "variacao_pct": 60.87,
+          "zscore": -0.401,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 3.6,
+          "variacao_pct": -2.7,
+          "zscore": -0.404,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 3.7,
+          "variacao_pct": 2.78,
+          "zscore": -0.401,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 2.0,
+          "variacao_pct": -45.95,
+          "zscore": -0.451,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 3.0,
+          "variacao_pct": 50.0,
+          "zscore": -0.422,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 11.2,
+          "variacao_pct": 273.33,
+          "zscore": -0.185,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 10.0,
+          "variacao_pct": -10.71,
+          "zscore": -0.219,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 7.8,
+          "variacao_pct": -22.0,
+          "zscore": -0.283,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 22.2,
+          "variacao_pct": 184.62,
+          "zscore": 0.134,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 17.58,
+      "n_meses_no_ranking": 21
+    },
+    "Classe D": {
+      "descricao": "Resíduos perigosos oriundos do processo de construção, tais como tintas, solventes, óleos e outros ou aqueles contaminados ou prejudiciais à",
+      "serie": [
+        {
+          "periodo": "2024-11",
+          "quantidade_toneladas": 35.3,
+          "variacao_pct": null,
+          "zscore": -0.799,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2024-12",
+          "quantidade_toneladas": 46.3,
+          "variacao_pct": 31.16,
+          "zscore": -0.389,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 97.5,
+          "variacao_pct": 110.58,
+          "zscore": 1.519,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 79.6,
+          "variacao_pct": -18.36,
+          "zscore": 0.852,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 101.8,
+          "variacao_pct": 27.89,
+          "zscore": 1.679,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 108.3,
+          "variacao_pct": 6.39,
+          "zscore": 1.921,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 42.3,
+          "variacao_pct": -60.94,
+          "zscore": -0.538,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 38.0,
+          "variacao_pct": -10.17,
+          "zscore": -0.699,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 51.4,
+          "variacao_pct": 35.26,
+          "zscore": -0.199,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 69.4,
+          "variacao_pct": 35.02,
+          "zscore": 0.472,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 79.2,
+          "variacao_pct": 14.12,
+          "zscore": 0.837,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 54.1,
+          "variacao_pct": -31.69,
+          "zscore": -0.099,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 34.5,
+          "variacao_pct": -36.23,
+          "zscore": -0.829,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 24.4,
+          "variacao_pct": -29.28,
+          "zscore": -1.205,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 49.0,
+          "variacao_pct": 100.82,
+          "zscore": -0.289,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 30.9,
+          "variacao_pct": -36.94,
+          "zscore": -0.963,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 97.0,
+          "variacao_pct": 213.92,
+          "zscore": 1.5,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 27.2,
+          "variacao_pct": -71.96,
+          "zscore": -1.101,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 35.8,
+          "variacao_pct": 31.62,
+          "zscore": -0.781,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 23.5,
+          "variacao_pct": -34.36,
+          "zscore": -1.239,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 55.6,
+          "variacao_pct": 136.6,
+          "zscore": -0.043,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 67.3,
+          "variacao_pct": 21.04,
+          "zscore": 0.393,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 56.75,
+      "n_meses_no_ranking": 22
+    },
+    "Grupo A": {
+      "descricao": "Resíduos de Serviços de Saúde classificados como Grupos A1, A2, A3, A4 ou A5, conforme ANVISA RDC 222/2018 - Contempla os resíduos",
+      "serie": [
+        {
+          "periodo": "2024-11",
+          "quantidade_toneladas": 1622.0,
+          "variacao_pct": null,
+          "zscore": -0.677,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2024-12",
+          "quantidade_toneladas": 1540.4,
+          "variacao_pct": -5.03,
+          "zscore": -0.92,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 1665.2,
+          "variacao_pct": 8.1,
+          "zscore": -0.548,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 1660.9,
+          "variacao_pct": -0.26,
+          "zscore": -0.561,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 1418.7,
+          "variacao_pct": -14.58,
+          "zscore": -1.282,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 2048.2,
+          "variacao_pct": 44.37,
+          "zscore": 0.591,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 1626.7,
+          "variacao_pct": -20.58,
+          "zscore": -0.663,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 1900.8,
+          "variacao_pct": 16.85,
+          "zscore": 0.152,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 1910.6,
+          "variacao_pct": 0.52,
+          "zscore": 0.181,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 1732.0,
+          "variacao_pct": -9.35,
+          "zscore": -0.35,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 1766.0,
+          "variacao_pct": 1.96,
+          "zscore": -0.249,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 1656.1,
+          "variacao_pct": -6.22,
+          "zscore": -0.575,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 1544.6,
+          "variacao_pct": -6.73,
+          "zscore": -0.907,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 1665.8,
+          "variacao_pct": 7.85,
+          "zscore": -0.547,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 1829.5,
+          "variacao_pct": 9.83,
+          "zscore": -0.06,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 1569.4,
+          "variacao_pct": -14.22,
+          "zscore": -0.833,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 2102.6,
+          "variacao_pct": 33.97,
+          "zscore": 0.753,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 1946.7,
+          "variacao_pct": -7.41,
+          "zscore": 0.289,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 2950.4,
+          "variacao_pct": 51.56,
+          "zscore": 3.274,
+          "anomaly_flag": true
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 2159.4,
+          "variacao_pct": -26.81,
+          "zscore": 0.922,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 2152.9,
+          "variacao_pct": -0.3,
+          "zscore": 0.902,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 2221.8,
+          "variacao_pct": 3.2,
+          "zscore": 1.107,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 1849.58,
+      "n_meses_no_ranking": 22
+    },
+    "Grupo A1": {
+      "descricao": "Culturas e estoques de micro-organismos; resíduos de fabricação de produtos biológicos, exceto os hemoderivados; descarte de vacinas de",
+      "serie": [
+        {
+          "periodo": "2024-11",
+          "quantidade_toneladas": 1145.5,
+          "variacao_pct": null,
+          "zscore": 3.127,
+          "anomaly_flag": true
+        },
+        {
+          "periodo": "2024-12",
+          "quantidade_toneladas": 255.9,
+          "variacao_pct": -77.66,
+          "zscore": 0.064,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 1088.7,
+          "variacao_pct": 325.44,
+          "zscore": 2.931,
+          "anomaly_flag": true
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 55.4,
+          "variacao_pct": -94.91,
+          "zscore": -0.627,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 97.5,
+          "variacao_pct": 75.99,
+          "zscore": -0.482,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 117.2,
+          "variacao_pct": 20.21,
+          "zscore": -0.414,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 191.8,
+          "variacao_pct": 63.65,
+          "zscore": -0.157,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 170.5,
+          "variacao_pct": -11.11,
+          "zscore": -0.23,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 195.1,
+          "variacao_pct": 14.43,
+          "zscore": -0.146,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 155.2,
+          "variacao_pct": -20.45,
+          "zscore": -0.283,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 153.1,
+          "variacao_pct": -1.35,
+          "zscore": -0.29,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 260.6,
+          "variacao_pct": 70.22,
+          "zscore": 0.08,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 168.4,
+          "variacao_pct": -35.38,
+          "zscore": -0.238,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 187.9,
+          "variacao_pct": 11.58,
+          "zscore": -0.17,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 167.7,
+          "variacao_pct": -10.75,
+          "zscore": -0.24,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 79.0,
+          "variacao_pct": -52.89,
+          "zscore": -0.545,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 174.7,
+          "variacao_pct": 121.14,
+          "zscore": -0.216,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 97.0,
+          "variacao_pct": -44.48,
+          "zscore": -0.484,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 204.5,
+          "variacao_pct": 110.82,
+          "zscore": -0.113,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 83.6,
+          "variacao_pct": -59.12,
+          "zscore": -0.53,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 69.6,
+          "variacao_pct": -16.75,
+          "zscore": -0.578,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 104.2,
+          "variacao_pct": 49.71,
+          "zscore": -0.459,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 237.41,
+      "n_meses_no_ranking": 22
+    },
+    "Grupo A2": {
+      "descricao": "Carcaças, peças anatômicas, vísceras e outros resíduos provenientes de animais submetidos a processos de experimentação com inoculação de",
+      "serie": [
+        {
+          "periodo": "2024-11",
+          "quantidade_toneladas": 5.0,
+          "variacao_pct": null,
+          "zscore": -0.824,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2024-12",
+          "quantidade_toneladas": 6.6,
+          "variacao_pct": 32.0,
+          "zscore": -0.088,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 7.0,
+          "variacao_pct": 6.06,
+          "zscore": 0.096,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 11.2,
+          "variacao_pct": 60.0,
+          "zscore": 2.027,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 6.0,
+          "variacao_pct": -46.43,
+          "zscore": -0.364,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 11.1,
+          "variacao_pct": 85.0,
+          "zscore": 1.981,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 5.3,
+          "variacao_pct": -52.25,
+          "zscore": -0.686,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 5.6,
+          "variacao_pct": 5.66,
+          "zscore": -0.548,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 6.6,
+          "variacao_pct": 17.86,
+          "zscore": -0.088,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 4.2,
+          "variacao_pct": -36.36,
+          "zscore": -1.191,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 9.6,
+          "variacao_pct": 128.57,
+          "zscore": 1.292,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 5.8,
+          "variacao_pct": -39.58,
+          "zscore": -0.456,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 7.5,
+          "variacao_pct": 29.31,
+          "zscore": 0.326,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 6.9,
+          "variacao_pct": -8.0,
+          "zscore": 0.05,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 10.6,
+          "variacao_pct": 53.62,
+          "zscore": 1.752,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 4.7,
+          "variacao_pct": -55.66,
+          "zscore": -0.961,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 9.0,
+          "variacao_pct": 91.49,
+          "zscore": 1.016,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 4.4,
+          "variacao_pct": -51.11,
+          "zscore": -1.099,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 4.9,
+          "variacao_pct": 11.36,
+          "zscore": -0.869,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 5.8,
+          "variacao_pct": 18.37,
+          "zscore": -0.456,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 4.9,
+          "variacao_pct": -15.52,
+          "zscore": -0.869,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 6.7,
+          "variacao_pct": 36.73,
+          "zscore": -0.042,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 6.79,
+      "n_meses_no_ranking": 22
+    },
+    "Grupo A3": {
+      "descricao": "Peças anatômicas (membros) do ser humano; produto de fecundação sem sinais vitais, com peso menor que 500 gramas ou estatura menor que",
+      "serie": [
+        {
+          "periodo": "2024-11",
+          "quantidade_toneladas": 1.3,
+          "variacao_pct": null,
+          "zscore": -0.532,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2024-12",
+          "quantidade_toneladas": 0.7,
+          "variacao_pct": -46.15,
+          "zscore": -0.547,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 0.9,
+          "variacao_pct": 28.57,
+          "zscore": -0.542,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 2.5,
+          "variacao_pct": 177.78,
+          "zscore": -0.502,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 0.9,
+          "variacao_pct": -64.0,
+          "zscore": -0.542,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 6.7,
+          "variacao_pct": 644.44,
+          "zscore": -0.397,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 1.5,
+          "variacao_pct": -77.61,
+          "zscore": -0.527,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 0.9,
+          "variacao_pct": -40.0,
+          "zscore": -0.542,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 2.8,
+          "variacao_pct": 211.11,
+          "zscore": -0.495,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 1.7,
+          "variacao_pct": -39.29,
+          "zscore": -0.522,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 3.8,
+          "variacao_pct": 123.53,
+          "zscore": -0.47,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 45.5,
+          "variacao_pct": 1097.37,
+          "zscore": 0.572,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 120.2,
+          "variacao_pct": 164.18,
+          "zscore": 2.438,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 128.6,
+          "variacao_pct": 6.99,
+          "zscore": 2.647,
+          "anomaly_flag": true
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 77.7,
+          "variacao_pct": -39.58,
+          "zscore": 1.376,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 70.6,
+          "variacao_pct": -9.14,
+          "zscore": 1.199,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 27.2,
+          "variacao_pct": -61.47,
+          "zscore": 0.115,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 0.9,
+          "variacao_pct": -96.69,
+          "zscore": -0.542,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 0.6,
+          "variacao_pct": -33.33,
+          "zscore": -0.55,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 0.6,
+          "variacao_pct": 0.0,
+          "zscore": -0.55,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 0.9,
+          "variacao_pct": 50.0,
+          "zscore": -0.542,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 0.9,
+          "variacao_pct": 0.0,
+          "zscore": -0.542,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 22.61,
+      "n_meses_no_ranking": 22
+    },
+    "Grupo A4": {
+      "descricao": "Kits de linhas arteriais, endovenosas e dialisadores, quando descartados; Filtros de ar e gases de área contaminada; membrana filtrante de",
+      "serie": [
+        {
+          "periodo": "2024-11",
+          "quantidade_toneladas": 230.7,
+          "variacao_pct": null,
+          "zscore": -0.296,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2024-12",
+          "quantidade_toneladas": 283.6,
+          "variacao_pct": 22.93,
+          "zscore": 0.089,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 336.8,
+          "variacao_pct": 18.76,
+          "zscore": 0.476,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 311.7,
+          "variacao_pct": -7.45,
+          "zscore": 0.294,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 340.0,
+          "variacao_pct": 9.08,
+          "zscore": 0.5,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 274.7,
+          "variacao_pct": -19.21,
+          "zscore": 0.024,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 429.1,
+          "variacao_pct": 56.21,
+          "zscore": 1.149,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 364.1,
+          "variacao_pct": -15.15,
+          "zscore": 0.675,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 719.2,
+          "variacao_pct": 97.53,
+          "zscore": 3.262,
+          "anomaly_flag": true
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 200.3,
+          "variacao_pct": -72.15,
+          "zscore": -0.518,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 219.9,
+          "variacao_pct": 9.79,
+          "zscore": -0.375,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 198.0,
+          "variacao_pct": -9.96,
+          "zscore": -0.535,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 210.1,
+          "variacao_pct": 6.11,
+          "zscore": -0.446,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 90.7,
+          "variacao_pct": -56.83,
+          "zscore": -1.316,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 234.8,
+          "variacao_pct": 158.88,
+          "zscore": -0.267,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 195.3,
+          "variacao_pct": -16.82,
+          "zscore": -0.554,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 374.7,
+          "variacao_pct": 91.86,
+          "zscore": 0.752,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 265.1,
+          "variacao_pct": -29.25,
+          "zscore": -0.046,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 257.7,
+          "variacao_pct": -2.79,
+          "zscore": -0.1,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 265.8,
+          "variacao_pct": 3.14,
+          "zscore": -0.041,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 161.0,
+          "variacao_pct": -39.43,
+          "zscore": -0.804,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 7.4,
+          "variacao_pct": -95.4,
+          "zscore": -1.923,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 271.4,
+      "n_meses_no_ranking": 22
+    },
+    "Grupo A5": {
+      "descricao": "Órgãos, tecidos, fluidos orgânicos, materiais perfurocortantes ou escarificantes e demais materiais resultantes da atenção à saúde de indivíduos",
+      "serie": [
+        {
+          "periodo": "2024-11",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.546,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2024-12",
+          "quantidade_toneladas": 10.5,
+          "variacao_pct": null,
+          "zscore": 1.662,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 0.8,
+          "variacao_pct": -92.38,
+          "zscore": -0.377,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 0.1,
+          "variacao_pct": -87.5,
+          "zscore": -0.525,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 1.1,
+          "variacao_pct": 1000.0,
+          "zscore": -0.314,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 0.1,
+          "variacao_pct": -90.91,
+          "zscore": -0.525,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 0.3,
+          "variacao_pct": 200.0,
+          "zscore": -0.483,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 0.1,
+          "variacao_pct": -66.67,
+          "zscore": -0.525,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 0.3,
+          "variacao_pct": 200.0,
+          "zscore": -0.483,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 0.5,
+          "variacao_pct": 66.67,
+          "zscore": -0.44,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 1.7,
+          "variacao_pct": 240.0,
+          "zscore": -0.188,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 0.6,
+          "variacao_pct": -64.71,
+          "zscore": -0.419,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 1.7,
+          "variacao_pct": 183.33,
+          "zscore": -0.188,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 1.3,
+          "variacao_pct": -23.53,
+          "zscore": -0.272,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 1.5,
+          "variacao_pct": 15.38,
+          "zscore": -0.23,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 8.9,
+          "variacao_pct": 493.33,
+          "zscore": 1.325,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 2.6,
+          "variacao_pct": -70.79,
+          "zscore": 0.001,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 1.0,
+          "variacao_pct": -61.54,
+          "zscore": -0.335,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 1.2,
+          "variacao_pct": 20.0,
+          "zscore": -0.293,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 20.2,
+          "variacao_pct": 1583.33,
+          "zscore": 3.701,
+          "anomaly_flag": true
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 0.6,
+          "variacao_pct": -97.03,
+          "zscore": -0.419,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 2.0,
+          "variacao_pct": 233.33,
+          "zscore": -0.125,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 2.6,
+      "n_meses_no_ranking": 22
+    },
+    "Grupo B": {
+      "descricao": "Produtos hormonais e produtos antimicrobianos; citostáticos; antineoplásicos - imunossupressores; digitálicos; imunomoduladores; anti-",
+      "serie": [
+        {
+          "periodo": "2024-11",
+          "quantidade_toneladas": 711.5,
+          "variacao_pct": null,
+          "zscore": -0.051,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2024-12",
+          "quantidade_toneladas": 597.9,
+          "variacao_pct": -15.97,
+          "zscore": -0.901,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 668.7,
+          "variacao_pct": 11.84,
+          "zscore": -0.371,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 649.8,
+          "variacao_pct": -2.83,
+          "zscore": -0.513,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 764.2,
+          "variacao_pct": 17.61,
+          "zscore": 0.343,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 807.6,
+          "variacao_pct": 5.68,
+          "zscore": 0.668,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 1013.5,
+          "variacao_pct": 25.5,
+          "zscore": 2.208,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 856.9,
+          "variacao_pct": -15.45,
+          "zscore": 1.037,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 949.0,
+          "variacao_pct": 10.75,
+          "zscore": 1.726,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 625.6,
+          "variacao_pct": -34.08,
+          "zscore": -0.694,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 865.6,
+          "variacao_pct": 38.36,
+          "zscore": 1.102,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 622.2,
+          "variacao_pct": -28.12,
+          "zscore": -0.719,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 606.2,
+          "variacao_pct": -2.57,
+          "zscore": -0.839,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 568.5,
+          "variacao_pct": -6.22,
+          "zscore": -1.121,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 545.4,
+          "variacao_pct": -4.06,
+          "zscore": -1.294,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 570.4,
+          "variacao_pct": 4.58,
+          "zscore": -1.107,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 887.1,
+          "variacao_pct": 55.52,
+          "zscore": 1.263,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 701.2,
+          "variacao_pct": -20.96,
+          "zscore": -0.128,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 604.0,
+          "variacao_pct": -13.86,
+          "zscore": -0.856,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 640.4,
+          "variacao_pct": 6.03,
+          "zscore": -0.583,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 733.2,
+          "variacao_pct": 14.49,
+          "zscore": 0.111,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 814.8,
+          "variacao_pct": 11.13,
+          "zscore": 0.722,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 718.35,
+      "n_meses_no_ranking": 22
+    },
+    "Grupo C": {
+      "descricao": "Materiais resultantes de laboratórios de pesquisa e ensino na área de saúde, laboratórios de análises clínicas e serviços de medicina nuclear e",
+      "serie": [
+        {
+          "periodo": "2024-11",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.579,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2024-12",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.579,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.579,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 0.9,
+          "variacao_pct": null,
+          "zscore": 3.364,
+          "anomaly_flag": true
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": -100.0,
+          "zscore": -0.579,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.579,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.579,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.579,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 0.2,
+          "variacao_pct": null,
+          "zscore": 0.297,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 0.2,
+          "variacao_pct": 0.0,
+          "zscore": 0.297,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 0.3,
+          "variacao_pct": 50.0,
+          "zscore": 0.735,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 0.4,
+          "variacao_pct": 33.33,
+          "zscore": 1.173,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 0.3,
+          "variacao_pct": -25.0,
+          "zscore": 0.735,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 0.2,
+          "variacao_pct": -33.33,
+          "zscore": 0.297,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 0.00301,
+          "variacao_pct": -98.5,
+          "zscore": -0.566,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": -100.0,
+          "zscore": -0.579,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.579,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 0.0,
+          "variacao_pct": null,
+          "zscore": -0.579,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 0.01,
+          "variacao_pct": null,
+          "zscore": -0.536,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 0.13,
+      "n_meses_no_ranking": 19
+    },
+    "Grupo D": {
+      "descricao": "Resíduos que não apresentam risco biológico, químico ou radiológico à saúde ou ao meio ambiente, podendo ser equiparados aos resíduos",
+      "serie": [
+        {
+          "periodo": "2024-11",
+          "quantidade_toneladas": 618.9,
+          "variacao_pct": null,
+          "zscore": -0.263,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2024-12",
+          "quantidade_toneladas": 529.5,
+          "variacao_pct": -14.44,
+          "zscore": -0.938,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 871.2,
+          "variacao_pct": 64.53,
+          "zscore": 1.644,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 837.0,
+          "variacao_pct": -3.93,
+          "zscore": 1.386,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 782.3,
+          "variacao_pct": -6.54,
+          "zscore": 0.972,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 570.4,
+          "variacao_pct": -27.09,
+          "zscore": -0.629,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 682.0,
+          "variacao_pct": 19.57,
+          "zscore": 0.214,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 682.7,
+          "variacao_pct": 0.1,
+          "zscore": 0.219,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 805.1,
+          "variacao_pct": 17.93,
+          "zscore": 1.145,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 501.1,
+          "variacao_pct": -37.76,
+          "zscore": -1.153,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 627.2,
+          "variacao_pct": 25.16,
+          "zscore": -0.2,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 587.5,
+          "variacao_pct": -6.33,
+          "zscore": -0.5,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 559.1,
+          "variacao_pct": -4.83,
+          "zscore": -0.715,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 300.6,
+          "variacao_pct": -46.24,
+          "zscore": -2.669,
+          "anomaly_flag": true
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 525.3,
+          "variacao_pct": 74.75,
+          "zscore": -0.97,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 576.9,
+          "variacao_pct": 9.82,
+          "zscore": -0.58,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 753.7,
+          "variacao_pct": 30.65,
+          "zscore": 0.756,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 752.1,
+          "variacao_pct": -0.21,
+          "zscore": 0.744,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 748.7,
+          "variacao_pct": -0.45,
+          "zscore": 0.718,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 691.7,
+          "variacao_pct": -7.61,
+          "zscore": 0.287,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 739.0,
+          "variacao_pct": 6.84,
+          "zscore": 0.645,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 638.7,
+          "variacao_pct": -13.57,
+          "zscore": -0.113,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 653.67,
+      "n_meses_no_ranking": 22
+    },
+    "Grupo E": {
+      "descricao": "Materiais perfurocortantes ou escarificantes, tais como: lâminas de barbear, agulhas, escalpes, ampolas de vidro, brocas, limas endodônticas,",
+      "serie": [
+        {
+          "periodo": "2024-11",
+          "quantidade_toneladas": 617.5,
+          "variacao_pct": null,
+          "zscore": -0.256,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2024-12",
+          "quantidade_toneladas": 487.6,
+          "variacao_pct": -21.04,
+          "zscore": -0.862,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-01",
+          "quantidade_toneladas": 636.2,
+          "variacao_pct": 30.48,
+          "zscore": -0.168,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-02",
+          "quantidade_toneladas": 565.1,
+          "variacao_pct": -11.18,
+          "zscore": -0.5,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-03",
+          "quantidade_toneladas": 511.0,
+          "variacao_pct": -9.57,
+          "zscore": -0.753,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-04",
+          "quantidade_toneladas": 833.1,
+          "variacao_pct": 63.03,
+          "zscore": 0.751,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-05",
+          "quantidade_toneladas": 822.5,
+          "variacao_pct": -1.27,
+          "zscore": 0.702,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-06",
+          "quantidade_toneladas": 890.6,
+          "variacao_pct": 8.28,
+          "zscore": 1.02,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-07",
+          "quantidade_toneladas": 830.7,
+          "variacao_pct": -6.73,
+          "zscore": 0.74,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-08",
+          "quantidade_toneladas": 897.6,
+          "variacao_pct": 8.05,
+          "zscore": 1.052,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-09",
+          "quantidade_toneladas": 592.2,
+          "variacao_pct": -34.02,
+          "zscore": -0.374,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-10",
+          "quantidade_toneladas": 619.1,
+          "variacao_pct": 4.54,
+          "zscore": -0.248,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-11",
+          "quantidade_toneladas": 546.2,
+          "variacao_pct": -11.78,
+          "zscore": -0.589,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2025-12",
+          "quantidade_toneladas": 443.7,
+          "variacao_pct": -18.77,
+          "zscore": -1.067,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-01",
+          "quantidade_toneladas": 520.5,
+          "variacao_pct": 17.31,
+          "zscore": -0.709,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-02",
+          "quantidade_toneladas": 1409.4,
+          "variacao_pct": 170.78,
+          "zscore": 3.443,
+          "anomaly_flag": true
+        },
+        {
+          "periodo": "2026-03",
+          "quantidade_toneladas": 620.4,
+          "variacao_pct": -55.98,
+          "zscore": -0.242,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-04",
+          "quantidade_toneladas": 728.1,
+          "variacao_pct": 17.36,
+          "zscore": 0.261,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-05",
+          "quantidade_toneladas": 556.9,
+          "variacao_pct": -23.51,
+          "zscore": -0.539,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-06",
+          "quantidade_toneladas": 478.4,
+          "variacao_pct": -14.1,
+          "zscore": -0.905,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-07",
+          "quantidade_toneladas": 617.9,
+          "variacao_pct": 29.16,
+          "zscore": -0.254,
+          "anomaly_flag": false
+        },
+        {
+          "periodo": "2026-08",
+          "quantidade_toneladas": 564.4,
+          "variacao_pct": -8.66,
+          "zscore": -0.504,
+          "anomaly_flag": false
+        }
+      ],
+      "media_toneladas": 672.23,
+      "n_meses_no_ranking": 22
+    }
+  },
+  "gerado_em": "2026-10-05T22:25:11.508008+00:00",
+  "schema_version": "mtr_gold_v0.1"
+}
